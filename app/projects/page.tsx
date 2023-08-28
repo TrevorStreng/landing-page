@@ -9,15 +9,16 @@ export default function Projects() {
         "This is a simulator that allows you to visualize how different sorting algorithms run.",
     },
     {
+      name: "Apex Legends Player Data",
+      link: "/apex",
+      description:
+        "This allows players with active accounts to see certain stats on their account.",
+    },
+    {
       name: "Youtube live chat display",
       link: "#",
       description:
         "this is a Google Chrome externsion I built that allows you to still see the chat window if you are in theather mode. It puts the chat window next to the viewing container.",
-    },
-    {
-      name: "chatbot",
-      link: "#",
-      description: "this is a placeholder",
     },
   ];
   return (

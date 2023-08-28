@@ -7,7 +7,7 @@ export default function Sorting() {
   const [arrayLength, setArrayLength] = useState<number>(10);
   const [algorithm, setAlgorithm] = useState<string>("bubbleSort");
   const [sorting, setSorting] = useState<boolean>(false);
-  const [speed, setSpeed] = useState<number>(250);
+  const [speed, setSpeed] = useState<number>(25);
 
   function randomArrGenerator(length: number) {
     if (length < 2) {
@@ -234,9 +234,9 @@ export default function Sorting() {
               onChange={(e) => setSpeed(parseInt(e.target.value))}
               name="speedSelector"
             >
-              <option value={250}>slow</option>
-              <option value={100}>normal</option>
               <option value={25}>fast</option>
+              <option value={75}>normal</option>
+              <option value={150}>slow</option>
             </select>
           </div>
         </div>
