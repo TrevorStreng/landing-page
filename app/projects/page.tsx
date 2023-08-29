@@ -9,10 +9,9 @@ export default function Projects() {
         "This is a simulator that allows you to visualize how different sorting algorithms run.",
     },
     {
-      name: "Apex Legends Player Data",
-      link: "/apex",
-      description:
-        "This allows players with active accounts to see certain stats on their account.",
+      name: "Crypto Data",
+      link: "/crypto",
+      description: "Boom!",
     },
     {
       name: "Youtube live chat display",
