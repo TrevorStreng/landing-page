@@ -8,17 +8,17 @@ export default function Projects() {
       description:
         "This is a simulator that allows you to visualize how different sorting algorithms run.",
     },
-    {
-      name: "Crypto Data",
-      link: "/crypto",
-      description: "Boom!",
-    },
-    {
-      name: "Youtube live chat display",
-      link: "#",
-      description:
-        "this is a Google Chrome externsion I built that allows you to still see the chat window if you are in theather mode. It puts the chat window next to the viewing container.",
-    },
+    // {
+    //   name: "Crypto Data",
+    //   link: "/crypto",
+    //   description: "Boom!",
+    // },
+    // {
+    //   name: "Youtube live chat display",
+    //   link: "#",
+    //   description:
+    //     "this is a Google Chrome externsion I built that allows you to still see the chat window if you are in theather mode. It puts the chat window next to the viewing container.",
+    // },
   ];
   return (
     // ! Add a picture for each project
