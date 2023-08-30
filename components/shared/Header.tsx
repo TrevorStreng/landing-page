@@ -18,10 +18,6 @@ export default function Header() {
       route: "/projects",
     },
     {
-      name: "Contact",
-      route: "#",
-    },
-    {
       name: "Github",
       route: "https://github.com/TrevorStreng",
     },
@@ -29,9 +25,14 @@ export default function Header() {
 
   return (
     <>
-      <div className="flex items-center justify-between bg-blue-400 h-32 font-mono w-full px-5 lg:px-20">
+      <div
+        className="flex items-center justify-between bg-blue-400 h-32 font-mono w-full px-5 lg:px-20 fixed"
+        id="header"
+      >
         <div className="">
-          <h1 className="text-3xl">Trevor Streng</h1>
+          <Link href={"/"}>
+            <h1 className="text-3xl">Trevor Streng</h1>
+          </Link>
         </div>
         <div className="flex justify-between">
           <div id="desktop-menu">
@@ -84,7 +85,7 @@ export default function Header() {
           mobileDropDown
             ? "max-h-screen transition-max-h duration-700 ease-in-out overflow-hidden"
             : "max-h-0 overflow-hidden transition-max-h duration-700 ease-in-out"
-        }`}
+        } pt-32`}
       >
         {navLinks.map((link, index) => {
           const isActive = pathname === link.route;
@@ -117,6 +118,7 @@ export default function Header() {
           );
         })}
       </div>
+      {/* <div className="pt-32"></div> */}
     </>
   );
 }

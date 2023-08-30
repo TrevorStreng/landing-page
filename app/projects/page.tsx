@@ -4,21 +4,10 @@ export default function Projects() {
   const projects = [
     {
       name: "Sorting Simulator",
-      link: "/sorting",
+      link: "/projects/sorting",
       description:
         "This is a simulator that allows you to visualize how different sorting algorithms run.",
     },
-    // {
-    //   name: "Crypto Data",
-    //   link: "/crypto",
-    //   description: "Boom!",
-    // },
-    // {
-    //   name: "Youtube live chat display",
-    //   link: "#",
-    //   description:
-    //     "this is a Google Chrome externsion I built that allows you to still see the chat window if you are in theather mode. It puts the chat window next to the viewing container.",
-    // },
   ];
   return (
     // ! Add a picture for each project
@@ -27,7 +16,7 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className="text-center p-5 my-5 border border-blue-400 rounded-xl max-w-xl"
+            className="text-center p-5 my-5 border border-blue-400 rounded-xl w-3/4 lg:max-w-xl"
           >
             <h2 className="text-2xl">{project.name}</h2>
             {/* <pic></pic> */}

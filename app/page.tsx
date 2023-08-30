@@ -16,7 +16,7 @@ export default function Main() {
 
   return (
     <>
-      <div className="flex justify-center h-full p-2">
+      <div className="flex flex-col justify-center items-center h-full p-2">
         <div
           id="leftSide"
           className="w-1/2 flex flex-col justify-between items-center border border-blue-400 rounded-xl m-2"

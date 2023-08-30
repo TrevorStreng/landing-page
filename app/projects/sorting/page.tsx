@@ -173,10 +173,13 @@ export default function Sorting() {
 
   return (
     <>
-      <div id="main-container" className=" flex flex-col items-center">
+      <div
+        id="main-container"
+        className=" flex flex-col items-center max-w-full"
+      >
         <div
           id="viewing-container"
-          className="h-96 flex justify-center items-end"
+          className="max-h-96 flex justify-center items-end py-2 pt-6"
         >
           {array.map((value, index) => (
             <div
@@ -186,21 +189,25 @@ export default function Sorting() {
             ></div>
           ))}
         </div>
-        <p id="array">[{array.join(",")}]</p>
-        <div className="flex items-center text-center justify-evenly border w-1/2 h-1/2">
-          <div className="border">
+        <div>
+          <p id="array" className="text-xs">
+            [{array.join(",")}]
+          </p>
+        </div>
+        <div className="flex flex-wrap items-center text-center justify-evenly w-3/4 lg:w-1/2 h-1/2 lg:my-2 border rounded-xl p-2">
+          <div className="max-w-full">
             <p>Input the length of the array</p>
             <p>Must be between 1-100</p>
             <input
               type="number"
-              className="border border-black"
+              className="border border-black max-w-full"
               value={arrayLength}
               onChange={(e) => {
                 setArrayLength(parseInt(e.target.value));
               }}
             ></input>
           </div>
-          <div className="flex flex-col items-center text-center  border">
+          <div className="flex flex-col items-center text-center my-2 lg:my-0 ">
             <label htmlFor="algorithms">Select a sorting algorithm</label>
             <select
               id="algorithms"
@@ -226,7 +233,7 @@ export default function Sorting() {
               visualization purposes.
             </p>
           </div>
-          <div className="flex flex-col items-center text-center border">
+          <div className="flex flex-col items-center text-center">
             <label htmlFor="algorithms">Select speed</label>
             <select
               id="speedSelector"
