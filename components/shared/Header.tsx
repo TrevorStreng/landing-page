@@ -1,11 +1,12 @@
 "use client";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import Script from "next/script";
 
 export default function Header() {
   const [mobileDropDown, setMobileDropDown] = useState(false);
-  const [spin, setSpin] = useState(false);
+  // const [spin, setSpin] = useState(false);
   const pathname = usePathname();
 
   const navLinks = [
@@ -25,6 +26,20 @@ export default function Header() {
 
   return (
     <>
+      <div>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SSHP15V2W1"
+        ></Script>
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-SSHP15V2W1');`}
+        </Script>
+      </div>
       <div
         className="flex items-center justify-between bg-blue-400 h-32 font-mono w-full px-5 lg:px-20 fixed"
         id="header"
