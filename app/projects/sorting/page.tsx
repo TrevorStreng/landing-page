@@ -24,7 +24,6 @@ export default function Sorting() {
   }
 
   // algorithms
-  // ? Probably move this to its own file
   useEffect(() => {
     async function bubbleSort(arr: number[]) {
       let sorted = false;
