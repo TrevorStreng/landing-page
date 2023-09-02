@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { isAnyArrayBuffer } from "util/types";
+import Script from "next/script";
+// import { isAnyArrayBuffer } from "util/types";
 
 export default function Sorting() {
   const [array, setArray] = useState<number[]>([10, 9, 8, 7, 6, 5, 4, 3, 2, 1]);
@@ -173,6 +174,20 @@ export default function Sorting() {
 
   return (
     <>
+      <div>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-SSHP15V2W1"
+        ></Script>
+        <Script id="google-analytics">
+          {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-SSHP15V2W1');`}
+        </Script>
+      </div>
       <div
         id="main-container"
         className=" flex flex-col items-center max-w-full"
