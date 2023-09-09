@@ -11,7 +11,7 @@ export default function Projects() {
         "This is a simulator that allows you to visualize how different sorting algorithms run.",
       github: false,
       pics: {
-        src: "/../../images/sortingSimPic.jpg",
+        src: "/../../public/images/sortingSimPic.jpg",
         width: 1000,
         height: 500,
         alt: "Picture of sorting simulator",
@@ -25,7 +25,7 @@ export default function Projects() {
         "This is an app to keep time of people when they are playing chess. It is just a basic app made using React Native. It consists of two pages, the main timer page and a settings page where you can change the color for each player and a way to set the time to a custom time of the users choice.",
       github: true,
       pics: {
-        src: "/../../images/chessClockMain.PNG",
+        src: "/../../public/images/chessClockMain.PNG",
         width: 82 * 2,
         height: 179 * 2,
         alt: "Picture of chess Clock app main screen",
