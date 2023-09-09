@@ -98,7 +98,7 @@ export default function Header() {
       <div
         className={`${
           mobileDropDown
-            ? "max-h-screen transition-max-h duration-700 ease-in-out overflow-hidden"
+            ? "max-h-screen transition-max-h duration-1000 ease-in-out overflow-hidden"
             : "max-h-0 overflow-hidden transition-max-h duration-700 ease-in-out"
         } pt-32`}
       >

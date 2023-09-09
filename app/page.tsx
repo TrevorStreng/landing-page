@@ -50,7 +50,7 @@ export default function Main() {
         </div>
         <div
           id="rightSide"
-          className=" flex w-1/2 justify-evenly items-center border border-blue-400 rounded-xl m-2"
+          className=" flex flex-col sm:flex-row w-1/2 justify-evenly items-center border border-blue-400 rounded-xl m-2"
         >
           <div className="text-center">
             <h3 className="text-3xl underline py-3">Skills</h3>
