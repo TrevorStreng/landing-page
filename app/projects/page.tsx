@@ -38,6 +38,13 @@ export default function Projects() {
       description:
         "This is the Robot Game we worked on in our Object Oriented Computer Graphics programming class. The goal is to get the player robot to all of the bases without running out of energy or taking too much damage from other robots or drones.",
       github: true,
+      pics: {
+        src: "/images/robotGame.jpg",
+        width: 120 * 5,
+        height: 87 * 5,
+        alt: "Picture of robot game",
+        style: "py-2",
+      },
     },
   ];
   return (
