@@ -264,12 +264,12 @@ export default function Sorting() {
         <div className="flex flex-col h-32 justify-around">
           <button
             onClick={() => randomArrGenerator(arrayLength)}
-            className="border border-blue-400 p-2 rounded-xl"
+            className="border border-lime-700 p-2 rounded-xl"
           >
             Randomize Array
           </button>
           <button
-            className="border border-blue-400 p-2 rounded-xl"
+            className="border border-lime-700 p-2 rounded-xl"
             onClick={() => setSorting(true)}
             disabled={sorting}
           >

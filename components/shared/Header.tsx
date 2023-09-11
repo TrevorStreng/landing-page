@@ -41,7 +41,7 @@ export default function Header() {
         </Script>
       </div>
       <div
-        className="flex items-center justify-between bg-blue-400 h-32 font-mono w-full px-5 lg:px-20 fixed"
+        className="flex items-center justify-between bg-lime-700 h-32 font-mono w-full px-5 lg:px-20 fixed"
         id="header"
       >
         <div className="">
@@ -62,7 +62,7 @@ export default function Header() {
                         href={link.route}
                         target="_blank" // Open in a new tab
                         rel="noopener noreferrer" // Recommended for security
-                        className={`text-xl hover:text-blue-800`}
+                        className={`text-xl hover:text-lime-900`}
                       >
                         {link.name}
                       </a>
@@ -71,7 +71,7 @@ export default function Header() {
                         href={link.route}
                         className={`${
                           isActive ? "underline" : ""
-                        } text-xl hover:text-blue-800`}
+                        } text-xl hover:text-lime-900`}
                       >
                         {link.name}
                       </Link>
