@@ -189,11 +189,11 @@ export default function Sorting() {
       </div>
       <div
         id="main-container"
-        className=" flex flex-col items-center max-w-full bg-white"
+        className="flex flex-col items-center max-w-full bg-white"
       >
         <div
           id="viewing-container"
-          className="max-h-96 flex justify-center items-end py-2 pt-6"
+          className="min-h-64 md:max-h-96 flex justify-center items-end py-2 pt-6"
         >
           {array.map((value, index) => (
             <div
