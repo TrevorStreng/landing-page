@@ -189,7 +189,7 @@ export default function Sorting() {
       </div>
       <div
         id="main-container"
-        className=" flex flex-col items-center max-w-full"
+        className=" flex flex-col items-center max-w-full bg-white"
       >
         <div
           id="viewing-container"

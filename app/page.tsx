@@ -2,16 +2,6 @@ import Image from "next/image";
 import Script from "next/script";
 import selfPortrait from "./../public/images/hikingPic2.jpg";
 export default function Main() {
-  // const skills = [
-
-  //   "HTML/CSS",
-  //   "Javascript",
-  //   "Node.js",
-  //   "React",
-  //   "Next.js",
-  //   "MySQL",
-  //   "Java",
-  // ];
   const skills = {
     languages: [
       "Javascript",
@@ -30,14 +20,14 @@ export default function Main() {
       "React Native",
       "Tailwind CSS",
       "Codename One",
+      "Prisma ORM",
+      "Sequelize",
       "Mongoose",
     ],
     tools: [
       "Git",
       "Github",
       "Visual Studio Code",
-      "Prisma ORM",
-      "Sequelize",
       "Postman",
       "Jira",
       "Wireshark",
@@ -51,7 +41,7 @@ export default function Main() {
   const hobbies = ["Riding bikes", "Snowboarding", "Programming"];
   const education = [
     {
-      school: "California State Universtiy, Sacramento",
+      school: "California State University, Sacramento",
       degree: "Bachelors of Science, Copmuter Science",
       date: "December 2023 - In Progress",
     },
@@ -89,10 +79,13 @@ export default function Main() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      <div className="flex flex-col justify-center items-center h-full p-2">
+      <div
+        className="flex flex-col justify-center items-center h-full md:p-2 z-0"
+        id="main"
+      >
         <div
           id="top"
-          className="w-2/3 md:w-1/2 flex flex-col md:flex-row justify-between items-center min-h-[27rem]"
+          className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center min-h-[27rem] bg-white rounded-3xl px-3 my-3"
         >
           <div className="flex items-center">
             <Image
@@ -110,12 +103,12 @@ export default function Main() {
             </p>
           </div>
         </div>
-        <div className="my-2 bg-lime-700 h-1 w-2/3 rounded-full"></div>
+        <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
         <div
           id="bottom"
           className=" flex flex-col md:flex-row w-full justify-evenly items-center min-h-[27rem]"
         >
-          <div className="text-center w-1/3">
+          <div className="text-center w-screen md:w-1/3 bg-white rounded-3xl">
             <h3 className="text-3xl underline py-3">Education</h3>
             <ul>
               {education.map((school, index) => (
@@ -128,9 +121,9 @@ export default function Main() {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col items-center text-center w-1/3">
+          <div className="flex flex-col items-center text-center w-screen md:w-1/3 bg-white rounded-3xl md:mx-3 my-3 md:my-0">
             <h3 className="text-3xl underline py-3">Skills</h3>
-            <div className="flex flex-col md:flex-row justify-evenly w-full">
+            <div className="flex flex-col md:flex-row justify-evenly items-center w-full">
               <div className="w-1/3">
                 <h4 className="underline text-xl pb-1">Languages</h4>
                 <ul>
@@ -157,7 +150,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="text-center w-1/3">
+          <div className="text-center w-screen md:w-1/3 bg-white rounded-3xl">
             <h3 className="text-3xl underline py-3">Work History</h3>
             <ul>
               {work.map((job, index) => (
@@ -174,8 +167,6 @@ export default function Main() {
             </ul>
           </div>
         </div>
-        {/* <div className="my-2 bg-lime-700 h-1 w-2/3 rounded-full"></div>
-        <div></div> */}
       </div>
     </>
   );

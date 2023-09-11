@@ -18,7 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} min-h-screen flex flex-col`}>
+      <body
+        className={`${inter.className} min-h-screen flex flex-col bg-[url('/images/tree_bark.png')]`}
+        style={{ backgroundAttachment: "fixed" }}
+      >
         <Header />
         <main className="grow">{children}</main>
         <Footer />
