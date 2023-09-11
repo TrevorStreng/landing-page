@@ -71,39 +71,39 @@ export default function Projects() {
             className="text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
           >
             <div className="max-w-[40rem]">
-              <h2 className="text-2xl p-4 border-y-4 border-blue-400">
+              <h2 className="text-2xl p-4 border-y-4 border-lime-600">
                 {project.name}
               </h2>
               <p className="my-2">{project.description}</p>
+              {project.pics && (
+                <div className="flex justify-center mb-5">
+                  <Image
+                    src={project.pics.src}
+                    alt={project.pics.alt}
+                    width={project.pics.width}
+                    height={project.pics.height}
+                    className={project.pics.style}
+                  />
+                </div>
+              )}
               {project.github ? (
                 <a
                   href={project.link}
                   target="_blank" // Open in a new tab
                   rel="noopener noreferrer" // Recommended for security
-                  className={`text-xl hover:text-blue-400`}
+                  className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
                 >
                   Click here to see on Github
                 </a>
               ) : (
                 <Link
                   href={project.link}
-                  className="text-xl p-4 hover:text-blue-400"
+                  className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
                 >
                   Click here to test
                 </Link>
               )}
             </div>
-            {project.pics && (
-              <div className="flex justify-center max-h-[25rem]">
-                <Image
-                  src={project.pics.src}
-                  alt={project.pics.alt}
-                  width={project.pics.width}
-                  height={project.pics.height}
-                  className={project.pics.style}
-                />
-              </div>
-            )}
           </div>
         ))}
       </div>
