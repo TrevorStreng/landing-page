@@ -41,8 +41,7 @@ export default function Header() {
         </Script>
       </div>
       <div
-        className="flex items-center justify-between bg-lime-700 h-32 font-mono w-full px-5 lg:px-20 fixed"
-        id="header"
+        className={`flex items-center justify-between h-32 bg-lime-700 font-mono w-full px-5 lg:px-20 fixed`}
       >
         <div className="">
           <Link href={"/"}>
@@ -96,18 +95,19 @@ export default function Header() {
         </div>
       </div>
       <div
+        id="dropDown"
         className={`${
           mobileDropDown
-            ? "max-h-screen transition-max-h duration-1000 ease-in-out overflow-hidden"
+            ? "transition-max-h duration-1000 ease-in-out overflow-hidden"
             : "max-h-0 overflow-hidden transition-max-h duration-700 ease-in-out"
-        } pt-32`}
+        } pt-32 w-screen`}
       >
         {navLinks.map((link, index) => {
           const isActive = pathname === link.route;
           return (
             <div
               key={index}
-              className="flex justify-center border-b-2 border-black"
+              className="flex justify-center border-b-2 border-black bg-white"
             >
               {link.name === "Github" ? (
                 <a
@@ -133,7 +133,6 @@ export default function Header() {
           );
         })}
       </div>
-      {/* <div className="pt-32"></div> */}
     </>
   );
 }
