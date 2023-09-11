@@ -100,7 +100,7 @@ export default function Header() {
           mobileDropDown
             ? "transition-max-h duration-1000 ease-in-out overflow-hidden"
             : "max-h-0 overflow-hidden transition-max-h duration-700 ease-in-out"
-        } pt-32 w-screen`}
+        } pt-32`}
       >
         {navLinks.map((link, index) => {
           const isActive = pathname === link.route;
