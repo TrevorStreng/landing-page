@@ -134,9 +134,9 @@ export default function Main() {
               I am currently a student at Sacramento State University pursuing
               my bachelors degree in Computer Science.
             </p>
-            <p>this is something new</p>
-            <p>this is something new</p>
-            <p>this is something new</p>
+            <p>This is something else</p>
+            <p>This is something else</p>
+            <p>This is something else</p>
             {/* Let's Connect:
               If you share my enthusiasm for technology, enjoy the thrill of
               problem-solving, or simply want to chat about the latest trends in
