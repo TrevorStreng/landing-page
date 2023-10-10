@@ -130,7 +130,18 @@ export default function Main() {
               pursuits provide the balance and inspiration I need to excel in
               the digital realm.
             </p> */}
-            <p>Were are testing out something!!!</p>
+            <p>
+              I am currently a student at Sacramento State University pursuing
+              my bachelors degree in Computer Science.
+            </p>
+            <p>
+              I am currently a student at Sacramento State University pursuing
+              my bachelors degree in Computer Science.
+            </p>
+            <p>
+              I am currently a student at Sacramento State University pursuing
+              my bachelors degree in Computer Science.
+            </p>
             {/* Let's Connect:
               If you share my enthusiasm for technology, enjoy the thrill of
               problem-solving, or simply want to chat about the latest trends in
