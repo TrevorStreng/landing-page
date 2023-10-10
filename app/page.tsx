@@ -97,10 +97,49 @@ export default function Main() {
           <div className="py-2 max-w-[40rem] text-center rounded-xl">
             <h1 className="text-xl">Computer Science Student</h1>
             <h1>Sacramento State</h1>
+            <h2>About Me</h2>
+            {/* <p>
+              Hello, I'm Trevor Streng, a soon-to-be graduate from California
+              State University, Sacramento, with a passion for technology and a
+              degree in Computer Science. As I stand on the cusp of embarking on
+              my professional journey, allow me to introduce myself and share a
+              glimpse into my world.
+              <br /> Throughout my college years, I've immersed myself in the
+              fascinating realm of computer science. My academic pursuits have
+              equipped me with a solid foundation in programming,
+              problem-solving, and software development principles. I'm
+              enthusiastic about translating my classroom knowledge into
+              real-world solutions and contributing to the ever-evolving tech
+              landscape.
+            </p>
+            <h2>Career Aspirations:</h2>
+            <p>
+              I'm eager to kickstart my career in software development and
+              engineering, where I can channel my creativity and analytical
+              skills into crafting innovative software solutions. I'm excited
+              about the opportunity to collaborate with like-minded individuals
+              and organizations that share my passion for pushing the boundaries
+              of what's possible in the digital world.
+            </p>
+            <h2>Beyond the Keyboard:</h2>
+            <p>
+              While I find immense satisfaction in coding and creating, there's
+              more to me than just lines of code. I thrive on the exhilaration
+              of riding my bike through scenic trails, perfecting my golf swing,
+              and riding my snowboard during the winter months. These outdoor
+              pursuits provide the balance and inspiration I need to excel in
+              the digital realm.
+            </p> */}
             <p>
               I am currently a student at Sacramento State University pursuing
               my bachelors degree in Computer Science.
             </p>
+            {/* Let's Connect:
+              If you share my enthusiasm for technology, enjoy the thrill of
+              problem-solving, or simply want to chat about the latest trends in
+              software development, I'd love to connect with you. Feel free to
+              explore my portfolio and get in touch. Together, we can create
+              something extraordinary in the world of software. */}
           </div>
         </div>
         <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
