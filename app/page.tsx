@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Script from "next/script";
-import selfPortrait from "./../public/images/hikingPic2.jpg";
+import selfPortrait from "public/images/hikingPic2.jpg";
 export default function Main() {
   const skills = {
     languages: [
