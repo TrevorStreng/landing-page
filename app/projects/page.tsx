@@ -3,6 +3,7 @@ import Script from "next/script";
 import Image from "next/image";
 
 export default function Projects() {
+  // testing if vercel will get new prod branch
   const projects = [
     {
       name: "Crypto Trading Bot",
