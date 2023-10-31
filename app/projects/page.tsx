@@ -26,20 +26,6 @@ export default function Projects() {
       },
     },
     {
-      name: "Sorting Simulator",
-      link: "/projects/sorting",
-      description:
-        "This is a simulator that allows you to visualize how different sorting algorithms run.",
-      github: false,
-      pics: {
-        src: "/images/sortingSimPic.jpg",
-        width: 1000,
-        height: 500,
-        alt: "Picture of sorting simulator",
-        style: "py-2",
-      },
-    },
-    {
       name: "Chess Timer App",
       link: "https://github.com/TrevorStreng/mobileClock",
       description:
