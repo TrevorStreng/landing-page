@@ -8,7 +8,7 @@ export default function Projects() {
       name: "Crypto Trading Bot",
       link: "https://github.com/TrevorStreng/cryptoBot",
       description:
-        "This is a automated cryptocurrency trading bot I have been working on. It is built using python and the ccxt library to connect to binanceUS. I have set it up to fetch data every minute that calculates moving averages based on the closing price of the last 5, 8, and 13 minutes. It then buys if the 5 and 8 minute moving averages move above the 13 minute average and sells if both of them go below the 13 minuite average. I have it running on a raspberry pi and am logging all trades to see if there is any errors that might occur.",
+        "This is a automated cryptocurrency trading bot I have been working on. It is built using python and the ccxt library to connect to binanceUS. I have set it up to fetch data every minute that calculates moving averages based on the closing price of the last 5, 8, and 13 minutes. It then buys if the 5 and 8 minute moving averages move above the 13 minute average and sells if both of them go below the 13 minute average. I have it running on a raspberry pi and am logging all trades to see if there is any errors that might occur.",
       github: true,
     },
     {
