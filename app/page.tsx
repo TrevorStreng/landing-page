@@ -43,7 +43,7 @@ export default function Main() {
     {
       school: "California State University, Sacramento",
       degree: "Bachelors of Science, Copmuter Science",
-      date: "December 2023 - In Progress",
+      date: "December 2023 (In Progress)",
     },
     {
       school: "Folsom Lake College",
@@ -85,7 +85,7 @@ export default function Main() {
       >
         <div
           id="top"
-          className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center min-h-[27rem] bg-white rounded-3xl px-3 my-3"
+          className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center h-[27rem] bg-white rounded-3xl px-3 my-3"
         >
           <div className="flex items-center">
             <Image
@@ -94,10 +94,13 @@ export default function Main() {
               className="rounded-full py-2"
             ></Image>
           </div>
-          <div className="py-2 max-w-[40rem] text-center rounded-xl">
-            <h1 className="text-xl">Computer Science Student</h1>
-            <h1>Sacramento State</h1>
-            <h2>About Me</h2>
+          <div className="flex flex-col justify-evenly py-2 max-w-[40rem] text-center items-center h-2/3">
+            <div className="text-xl">
+              <h1>Computer Science Student</h1>
+              <h1>at</h1>
+              <h1>Sacramento State</h1>
+            </div>
+            <h2 className="text-lg">About Me</h2>
             {/* <p>
               Hello, I'm Trevor Streng, a soon-to-be graduate from California
               State University, Sacramento, with a passion for technology and a
@@ -140,9 +143,37 @@ export default function Main() {
               software development, I'd love to connect with you. Feel free to
               explore my portfolio and get in touch. Together, we can create
               something extraordinary in the world of software. */}
+            <p className="bg-lime-600 rounded-xl w-32 h-10 flex items-center justify-center">
+              <a
+                href="/TrevorStrengResume2023CURRENT.pdf"
+                download="TrevorStreng's-Resume"
+                className=""
+              >
+                Download CV
+              </a>
+            </p>
           </div>
         </div>
         <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
+        <div id="middle" className="flex w-2/3 justify-center">
+          {/* <p>
+              <a
+                href="/TrevorStrengResume2023CURRENT.pdf"
+                download="TrevorStreng's-Resume"
+              >
+                Download CV
+              </a>
+            </p>
+            <p>
+              <a
+                href="/TrevorStrengResume2023CURRENT.docx"
+                download="TrevorStreng's-Resume"
+              >
+                Download CV Word/docX
+              </a>
+            </p> */}
+        </div>
+        {/* <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div> */}
         <div
           id="bottom"
           className=" flex flex-col md:flex-row w-full justify-evenly items-center min-h-[27rem]"
