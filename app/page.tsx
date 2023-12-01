@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Script from "next/script";
 import selfPortrait from "public/images/hikingPic2.jpg";
+import Weather from "./../components/weather";
+
+// ! Fix homepage for mobile and ipad
 export default function Main() {
   const skills = {
     languages: [
@@ -83,6 +86,12 @@ export default function Main() {
         className="flex flex-col justify-center items-center h-full md:p-2 z-0"
         id="main"
       >
+        <div
+          id="weather"
+          className="w-screen md:w-1/2 object-contain flex justify-center items-center bg-white rounded-3xl py-3 px-4"
+        >
+          <Weather />
+        </div>
         <div
           id="top"
           className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center h-[27rem] bg-white rounded-3xl px-3 my-3"

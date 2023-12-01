@@ -22,7 +22,7 @@ export default function Footer() {
           </div>
           <div className="w-12">
             <a
-              href="www.linkedin.com/in/trevor-streng"
+              href="https://www.linkedin.com/in/trevor-streng/"
               target="_blank" // Open in a new tab
               rel="noopener noreferrer" // Recommended for security
             >
