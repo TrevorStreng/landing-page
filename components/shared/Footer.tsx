@@ -12,10 +12,22 @@ export default function Footer() {
         </div>
         <div className="flex w-32 h-12 justify-between">
           <div className="w-12">
-            <FontAwesomeIcon icon={faGithub} style={{ color: "#000000" }} />
+            <a
+              href="https://github.com/TrevorStreng"
+              target="_blank" // Open in a new tab
+              rel="noopener noreferrer" // Recommended for security
+            >
+              <FontAwesomeIcon icon={faGithub} style={{ color: "#000000" }} />
+            </a>
           </div>
           <div className="w-12">
-            <FontAwesomeIcon icon={faLinkedin} style={{ color: "#000000" }} />
+            <a
+              href="www.linkedin.com/in/trevor-streng"
+              target="_blank" // Open in a new tab
+              rel="noopener noreferrer" // Recommended for security
+            >
+              <FontAwesomeIcon icon={faLinkedin} style={{ color: "#000000" }} />
+            </a>
           </div>
         </div>
       </div>
