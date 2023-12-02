@@ -87,12 +87,6 @@ export default function Main() {
         id="main"
       >
         <div
-          id="weather"
-          className="w-screen md:w-1/2 object-contain flex justify-center items-center bg-white rounded-3xl py-3 px-4"
-        >
-          <Weather />
-        </div>
-        <div
           id="top"
           className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center h-[27rem] bg-white rounded-3xl px-3 my-3"
         >
@@ -110,41 +104,10 @@ export default function Main() {
               <h1>Sacramento State</h1>
             </div>
             <h2 className="text-lg">About Me</h2>
-            {/* <p>
-              Hello, I'm Trevor Streng, a soon-to-be graduate from California
-              State University, Sacramento, with a passion for technology and a
-              degree in Computer Science. As I stand on the cusp of embarking on
-              my professional journey, allow me to introduce myself and share a
-              glimpse into my world.
-              <br /> Throughout my college years, I've immersed myself in the
-              fascinating realm of computer science. My academic pursuits have
-              equipped me with a solid foundation in programming,
-              problem-solving, and software development principles. I'm
-              enthusiastic about translating my classroom knowledge into
-              real-world solutions and contributing to the ever-evolving tech
-              landscape.
-            </p>
-            <h2>Career Aspirations:</h2>
             <p>
-              I'm eager to kickstart my career in software development and
-              engineering, where I can channel my creativity and analytical
-              skills into crafting innovative software solutions. I'm excited
-              about the opportunity to collaborate with like-minded individuals
-              and organizations that share my passion for pushing the boundaries
-              of what's possible in the digital world.
-            </p>
-            <h2>Beyond the Keyboard:</h2>
-            <p>
-              While I find immense satisfaction in coding and creating, there's
-              more to me than just lines of code. I thrive on the exhilaration
-              of riding my bike through scenic trails, perfecting my golf swing,
-              and riding my snowboard during the winter months. These outdoor
-              pursuits provide the balance and inspiration I need to excel in
-              the digital realm.
-            </p> */}
-            <p>
-              I am currently a student at Sacramento State University pursuing
-              my bachelors degree in Computer Science.
+              Motivated, passionate and driven student getting ready to graduate
+              from Sacramento State at the end of 2023. Inspired to learn how to
+              better myself and the projects I work on.
             </p>
             {/* Let's Connect:
               If you share my enthusiasm for technology, enjoy the thrill of
@@ -163,26 +126,15 @@ export default function Main() {
             </p>
           </div>
         </div>
-        <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
-        <div id="middle" className="flex w-2/3 justify-center">
-          {/* <p>
-              <a
-                href="/TrevorStrengResume2023CURRENT.pdf"
-                download="TrevorStreng's-Resume"
-              >
-                Download CV
-              </a>
-            </p>
-            <p>
-              <a
-                href="/TrevorStrengResume2023CURRENT.docx"
-                download="TrevorStreng's-Resume"
-              >
-                Download CV Word/docX
-              </a>
-            </p> */}
-        </div>
         {/* <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div> */}
+        <div id="middle" className="flex w-2/3 justify-center"></div>
+        <div
+          id="weather"
+          className="w-screen md:w-1/2 object-contain flex justify-center items-center bg-white rounded-3xl py-3 px-4"
+        >
+          <Weather />
+        </div>
+        <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
         <div
           id="bottom"
           className=" flex flex-col md:flex-row w-full justify-evenly items-center min-h-[27rem]"
