@@ -53,10 +53,11 @@ export default async function Weather() {
     },
   };
 
+  console.log(weatherData);
   const weatherPicture = () => {
-    if (weatherData.current.isDay === 0) return "night";
-    if (weatherData.current.precipitation === 0) return "sunny";
-    return "rainy";
+    if (weatherData.current.precipitation > 0) return "rainy";
+    if (weatherData.current.isDay === 1) return "sunny";
+    return "night";
   };
   const picType = weatherPicture();
 
@@ -89,10 +90,10 @@ export default async function Weather() {
           <div>
             <p>
               {/* {weatherData.current.time.toLocaleString("en-US", {
-              hour: "numeric",
-              minute: "numeric",
-              hour12: true,
-            })}{" "} */}
+                hour: "numeric",
+                minute: "numeric",
+                hour12: true,
+              })}{" "} */}
               {weatherData.current.time.toLocaleString("en-US", {
                 month: "numeric",
                 day: "numeric",
