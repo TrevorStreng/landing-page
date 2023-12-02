@@ -11,7 +11,8 @@ export default async function Weather() {
     q: "Sacramento",
   };
   const res = await fetch(
-    `https://api.weatherapi.com/v1/current.json?key=${params.key}&q=${params.q}&aqi=no`
+    `https://api.weatherapi.com/v1/current.json?key=${params.key}&q=${params.q}&aqi=no`,
+    { next: { revalidate: 1 } }
   );
   const weather = await res.json();
   console.log(weather);
