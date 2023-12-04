@@ -12,7 +12,7 @@ export default async function Weather() {
     { next: { revalidate: 60 } }
   );
   const weather = await res.json();
-  console.log(weather);
+  // console.log(weather);
   const imageUrl = `http:${weather.current.condition.icon}`;
 
   return (
@@ -21,8 +21,8 @@ export default async function Weather() {
         <Image
           src={imageUrl}
           alt="current weather icon"
-          width={50}
-          height={50}
+          width={100}
+          height={100}
         />
         <div className="flex flex-col">
           <div id="weatherInfo">{weather.location.localtime}</div>

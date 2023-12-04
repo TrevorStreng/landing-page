@@ -57,7 +57,7 @@ export default function Main() {
   const work = [
     {
       name: "Cameron Park Physical Therapy",
-      position: "Physical Therapy Aide",
+      position: "Physical Therapy Aide Supervisor",
       duties: [
         "Trained patients in speicalized exercises to aid in their recovery",
         "Collaborated with Physical Therapists to ensure effective patient treatment",
@@ -83,12 +83,12 @@ export default function Main() {
         </Script>
       </div>
       <div
-        className="flex flex-col justify-center items-center h-full md:p-2 z-0"
+        className="flex flex-col justify-center items-center h-full w-full md:p-2"
         id="main"
       >
         <div
           id="top"
-          className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center h-[27rem] bg-white rounded-3xl px-3 my-3"
+          className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center md:h-[27rem] bg-white rounded-3xl px-3 my-3"
         >
           <div className="flex items-center">
             <Image
@@ -176,13 +176,13 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="text-center w-screen md:w-1/3 bg-white rounded-3xl">
+          <div className="text-center w-screen md:w-1/3 bg-white rounded-3xl pb-1">
             <h3 className="text-3xl underline py-3">Work History</h3>
             <ul>
               {work.map((job, index) => (
                 <li key={index}>
-                  <p className="font-medium text-xl">{job.name}</p>
-                  <p>{job.position}</p>
+                  <p className="font-bold text-xl">{job.name}</p>
+                  <p className="text-lg font-medium">{job.position}</p>
                   <ul>
                     {job.duties.map((duty, index) => (
                       <li key={index}>{duty}</li>

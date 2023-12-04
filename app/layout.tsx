@@ -23,19 +23,9 @@ export default function RootLayout({
         style={{ backgroundAttachment: "fixed" }}
       >
         <Header />
-        <main className="grow">{children}</main>
+        <main className="grow z-10 w-full">{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
-
-// <!-- Google tag (gtag.js) -->
-// <script async src="https://www.googletagmanager.com/gtag/js?id=G-SSHP15V2W1"></script>
-// <script>
-//   window.dataLayer = window.dataLayer || [];
-//   function gtag(){dataLayer.push(arguments);}
-//   gtag('js', new Date());
-
-//   gtag('config', 'G-SSHP15V2W1');
-// </script>
