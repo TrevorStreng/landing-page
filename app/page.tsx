@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Script from "next/script";
-import selfPortrait from "public/images/hikingPic2.jpg";
+import selfPortrait from "public/images/portrait1.jpg";
 import Weather from "./../components/weather";
 
 // ! Fix homepage for mobile and ipad
@@ -94,7 +94,8 @@ export default function Main() {
             <Image
               src={selfPortrait}
               alt="Picture of myself"
-              className="rounded-full py-2"
+              className="rounded-full py-2 object-contain"
+              height={400}
             ></Image>
           </div>
           <div className="flex flex-col justify-evenly py-2 max-w-[40rem] text-center items-center h-2/3">
@@ -128,12 +129,6 @@ export default function Main() {
         </div>
         {/* <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div> */}
         <div id="middle" className="flex w-2/3 justify-center"></div>
-        <div
-          id="weather"
-          className="w-screen md:w-1/2 object-contain flex justify-center items-center bg-white rounded-3xl py-3 px-4"
-        >
-          <Weather />
-        </div>
         <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
         <div
           id="bottom"
@@ -197,6 +192,13 @@ export default function Main() {
               ))}
             </ul>
           </div>
+        </div>
+        <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
+        <div
+          id="weather"
+          className="w-screen md:w-1/2 object-contain flex justify-center items-center bg-white rounded-3xl py-3 px-4"
+        >
+          <Weather />
         </div>
       </div>
     </>

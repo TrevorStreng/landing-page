@@ -1,7 +1,4 @@
 import Image from "next/image";
-import sunny from "public/images/sunny.png";
-import night from "public/images/moon.png";
-import rainy from "public/images/rainy.png";
 import { config } from "./../config";
 
 export default async function Weather() {
@@ -12,7 +9,7 @@ export default async function Weather() {
   };
   const res = await fetch(
     `https://api.weatherapi.com/v1/current.json?key=${params.key}&q=${params.q}&aqi=no`,
-    { next: { revalidate: 1 } }
+    { next: { revalidate: 60 } }
   );
   const weather = await res.json();
   console.log(weather);
