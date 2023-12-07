@@ -23,7 +23,7 @@ export default function RootLayout({
         style={{ backgroundAttachment: "fixed" }}
       >
         <Header />
-        <main className="grow z-10 w-full">{children}</main>
+        <main className="grow w-full">{children}</main>
         <Footer />
       </body>
     </html>
