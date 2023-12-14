@@ -12,6 +12,22 @@ export default function Projects() {
       github: true,
     },
     {
+      name: "Tea Rex",
+      link: "https://github.com/khanhtruong0808/tea-rex",
+      website_name: "tea-rex.vercel.app",
+      website: "https://tea-rex.vercel.app/",
+      description:
+        "For my senior project I worked on a website for a local boba tea shop. Our client requested a website for her restaurant that would allow customers to order directly from the website and have those orders printed out at the restaurant.",
+      github: true,
+      pics: {
+        src: "/images/teaRex.jpg",
+        width: 1000,
+        height: 500,
+        alt: "Picture of sorting simulator",
+        style: "py-2",
+      },
+    },
+    {
       name: "Sorting Simulator",
       link: "/projects/sorting",
       description:
@@ -84,32 +100,58 @@ export default function Projects() {
               <p className="my-2">{project.description}</p>
               {project.pics && (
                 <div className="flex justify-center mb-5">
-                  <Image
-                    src={project.pics.src}
-                    alt={project.pics.alt}
-                    width={project.pics.width}
-                    height={project.pics.height}
-                    className={project.pics.style}
-                  />
+                  {project.website ? (
+                    <a href={project.website}>
+                      <Image
+                        src={project.pics.src}
+                        alt={project.pics.alt}
+                        width={project.pics.width}
+                        height={project.pics.height}
+                        className={project.pics.style}
+                      />
+                    </a>
+                  ) : (
+                    <>
+                      <Image
+                        src={project.pics.src}
+                        alt={project.pics.alt}
+                        width={project.pics.width}
+                        height={project.pics.height}
+                        className={project.pics.style}
+                      />
+                    </>
+                  )}
                 </div>
               )}
-              {project.github ? (
-                <a
-                  href={project.link}
-                  target="_blank" // Open in a new tab
-                  rel="noopener noreferrer" // Recommended for security
-                  className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
-                >
-                  Click here to see on Github
-                </a>
-              ) : (
-                <Link
-                  href={project.link}
-                  className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
-                >
-                  Click here to test
-                </Link>
-              )}
+              <div className="pt-2 w-full flex justify-evenly">
+                {project.github ? (
+                  <a
+                    href={project.link}
+                    target="_blank" // Open in a new tab
+                    rel="noopener noreferrer" // Recommended for security
+                    className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                  >
+                    View on Github
+                  </a>
+                ) : (
+                  <Link
+                    href={project.link}
+                    className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                  >
+                    Test here
+                  </Link>
+                )}
+                {project.website && (
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                  >
+                    {project.website_name}
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         ))}
