@@ -17,17 +17,22 @@ export default async function Weather() {
 
   return (
     <>
-      <div className="flex">
-        <Image
-          src={imageUrl}
-          alt="current weather icon"
-          width={100}
-          height={100}
-        />
-        <div className="flex flex-col">
+      <div className="flex justify-evenly items-center w-3/4">
+        <div className="w-1/3">
+          <h1 className="text-center">Weather in Sacramento: </h1>
+        </div>
+        <div className="flex flex-col items-center w-1/3">
           <div id="weatherInfo">{weather.location.localtime}</div>
+          <Image
+            src={imageUrl}
+            alt="current weather icon"
+            width={100}
+            height={100}
+          />
+        </div>
+        <div className="flex flex-col w-1/3 items-center">
           <div id="weatherInfo">{weather.current.condition.text}</div>
-          <div id="weatherInfo">{weather.current.temp_f}</div>
+          <div id="weatherInfo">{weather.current.temp_f}&deg;F</div>
         </div>
       </div>
     </>
