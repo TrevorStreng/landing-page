@@ -1,10 +1,27 @@
-import Image from "next/image";
+"use client";
 import Script from "next/script";
-import selfPortrait from "public/images/portrait1.jpg";
-import Weather from "./../components/weather";
+// import Weather from "./../components/weather";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { useEffect, useState } from "react";
 
 // ! Fix homepage for mobile and ipad
 export default function Main() {
+  const [showIcon, setShowIcon] = useState(true);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY;
+      const scrollThreshold = 150;
+      if (scrollPos >= scrollThreshold) {
+        setShowIcon(false);
+      } else {
+        setShowIcon(true);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const skills = {
     languages: [
       "Javascript",
@@ -82,26 +99,32 @@ export default function Main() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      <div
-        className="flex flex-col justify-center items-center h-full w-full md:p-2"
-        id="main"
-      >
+      <div id="overPic" className="flex flex-col h-screen items-center">
+        <div className="flex flex-col items-end text-center justify-center w-2/3 h-5/6 text-4xl font-mono">
+          <div>
+            <p className="text-2xl">Hey, I&apos;m</p> <p>Trevor Streng</p>
+          </div>
+        </div>
+
+        <div className="flex justify-center items-end h-1/3 items-center">
+          {showIcon && (
+            <FontAwesomeIcon
+              icon={faArrowDown}
+              className="animate-bounce w-14 h-14"
+              style={{ color: "white" }}
+            />
+          )}
+        </div>
+      </div>
+      <div className="bg-white" id="main">
         <div
           id="top"
-          className="w-screen md:w-1/2 flex flex-col md:flex-row justify-between items-center md:h-[27rem] bg-white rounded-3xl px-3 my-3"
+          className="flex flex-row justify-evenly items-center bg-white h-96"
         >
-          <div className="flex items-center">
-            <Image
-              src={selfPortrait}
-              alt="Picture of myself"
-              className="rounded-full py-2 object-contain"
-              height={400}
-            ></Image>
-          </div>
           <div className="flex flex-col justify-evenly py-2 max-w-[40rem] text-center items-center h-2/3">
             <div className="text-xl">
-              <h1>Computer Science Student</h1>
-              <h1>at</h1>
+              <h1>Computer Science Graduate</h1>
+              <h1>from</h1>
               <h1>Sacramento State</h1>
             </div>
             <h2 className="text-lg">About Me</h2>
@@ -110,12 +133,7 @@ export default function Main() {
               from Sacramento State at the end of 2023. Inspired to learn how to
               better myself and the projects I work on.
             </p>
-            {/* Let's Connect:
-              If you share my enthusiasm for technology, enjoy the thrill of
-              problem-solving, or simply want to chat about the latest trends in
-              software development, I'd love to connect with you. Feel free to
-              explore my portfolio and get in touch. Together, we can create
-              something extraordinary in the world of software. */}
+            {/* add something about what im doing to keep myself busy like trading crypto */}
             <p className="bg-lime-600 rounded-xl w-32 h-10 flex items-center justify-center">
               <a
                 href="/TrevorStrengResume2023CURRENT.pdf"
@@ -129,12 +147,11 @@ export default function Main() {
         </div>
         {/* <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div> */}
         <div id="middle" className="flex w-2/3 justify-center"></div>
-        <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
         <div
           id="bottom"
           className=" flex flex-col md:flex-row w-full justify-evenly items-center min-h-[27rem]"
         >
-          <div className="text-center w-screen md:w-1/3 bg-white rounded-3xl">
+          <div className="text-center md:w-1/3 bg-white rounded-3xl">
             <h3 className="text-3xl underline py-3">Education</h3>
             <ul>
               {education.map((school, index) => (
@@ -147,7 +164,7 @@ export default function Main() {
               ))}
             </ul>
           </div>
-          <div className="flex flex-col items-center text-center w-screen md:w-1/3 bg-white rounded-3xl md:mx-3 my-3 md:my-0">
+          <div className="flex flex-col items-center text-center md:w-1/3 bg-white rounded-3xl md:mx-3 my-3 md:my-0">
             <h3 className="text-3xl underline py-3">Skills</h3>
             <div className="flex flex-col md:flex-row justify-evenly items-center w-full">
               <div className="w-1/3">
@@ -176,7 +193,7 @@ export default function Main() {
               </div>
             </div>
           </div>
-          <div className="text-center w-screen md:w-1/3 bg-white rounded-3xl pb-1">
+          <div className="text-center md:w-1/3 bg-white rounded-3xl pb-1">
             <h3 className="text-3xl underline py-3">Work History</h3>
             <ul>
               {work.map((job, index) => (
@@ -194,12 +211,12 @@ export default function Main() {
           </div>
         </div>
         <div className="my-2 bg-lime-600 h-1 w-2/3 rounded-full"></div>
-        <div
+        {/* <div
           id="weather"
           className="w-screen md:w-1/2 object-contain flex justify-center items-center bg-white rounded-3xl py-3 px-4"
         >
           <Weather />
-        </div>
+        </div> */}
       </div>
     </>
   );

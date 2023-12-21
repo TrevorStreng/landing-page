@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
+import Image from "next/image";
+import selfPortrait from "public/images/wallSelfie.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,11 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} min-h-screen flex flex-col bg-[url('/images/tree_bark.png')]`}
-        style={{ backgroundAttachment: "fixed" }}
+        className={`${inter.className}`}
+        style={{
+          backgroundImage: `url(${selfPortrait.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+        }}
       >
-        <Header />
-        <main className="grow w-full">{children}</main>
+        {/* <Header /> */}
+        <main className="z-0">{children}</main>
         <Footer />
       </body>
     </html>

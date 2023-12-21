@@ -40,7 +40,7 @@ export default function Header() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      <div className="flex items-center justify-between h-32 bg-lime-700 font-mono w-full px-5 lg:px-20 fixed shadow-lg">
+      <div className="flex items-center justify-between h-24 bg-lime-700 font-mono w-full px-5 lg:px-20 fixed shadow-lg z-10">
         <div className="">
           <Link href={"/"}>
             <h1 className="text-3xl">Trevor Streng</h1>
