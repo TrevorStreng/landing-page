@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useState } from "react";
 import Script from "next/script";
+import { bgColor } from "./../../config";
 
 export default function Header() {
   const [mobileDropDown, setMobileDropDown] = useState(false);
@@ -40,7 +41,9 @@ export default function Header() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      <div className="flex items-center justify-between h-24 bg-lime-700 font-mono w-full px-5 lg:px-20 fixed shadow-lg z-10">
+      <div
+        className={`flex items-center justify-between h-24 ${bgColor} font-mono w-full px-5 lg:px-20 fixed shadow-lg z-10`}
+      >
         <div className="">
           <Link href={"/"}>
             <h1 className="text-3xl">Trevor Streng</h1>

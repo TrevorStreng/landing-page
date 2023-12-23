@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="font-mono">
       <body
         className={`${inter.className}`}
         style={{
@@ -30,7 +30,7 @@ export default function RootLayout({
         }}
       >
         {/* <Header /> */}
-        <main className="z-0">{children}</main>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
