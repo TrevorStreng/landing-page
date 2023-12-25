@@ -2,6 +2,8 @@
 import Script from "next/script";
 // import Weather from "./../components/weather";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Projects from "./../components/projectsComp";
@@ -148,7 +150,7 @@ export default function Main() {
         </div>
       </div>
       <div
-        className="flex flex-col justify-between items-center bg-white"
+        className="flex flex-col justify-between items-center bg-white px-2 lg:px-0"
         id="main"
       >
         <div
@@ -164,28 +166,51 @@ export default function Main() {
             ai. In my free time I try enjoy riding my bike, playing golf and
             going to the mountains to snowboard.
           </p>
-          <div id="connect">
-            <div>
+          <div id="connect" className="flex w-full justify-evenly pt-2">
+            <div className="flex items-center w-32 border rounded-md h-[1.9em]">
               <a
                 href="https://www.linkedin.com/in/trevor-streng/"
                 target="_blank" // Open in a new tab
                 rel="noopener noreferrer" // Recommended for security
-                className="flex items-center"
+                className="flex-none items-center w-full"
               >
-                {/* Connect w */}
-                {/* Still want to add linkedin button */}
+                <div className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    style={{ color: "#0a66c2" }}
+                    size="2xl"
+                  />
+                  <p className="text-center w-full">Connect</p>
+                </div>
               </a>
             </div>
-          </div>
-          {/* add something about what im doing to keep myself busy like trading crypto */}
-          <div className="bg-lime-700 rounded-xl w-32 h-10 flex items-center justify-center">
-            <a
-              href="/TrevorStrengResume2023CURRENT.pdf"
-              download="TrevorStreng's-Resume"
-              className=""
-            >
-              Download CV
-            </a>
+            <div className="flex items-center w-32 border rounded-md h-[1.9em]">
+              <a
+                href="https://github.com/TrevorStreng"
+                target="_blank" // Open in a new tab
+                rel="noopener noreferrer" // Recommended for security
+                className="flex-none w-full"
+              >
+                <div className="flex items-center">
+                  <FontAwesomeIcon
+                    icon={faSquareGithub}
+                    style={{ color: "#000000" }}
+                    size="2xl"
+                  />
+                  <p className="text-center w-full">Github</p>
+                </div>
+              </a>
+            </div>
+            {/* add something about what im doing to keep myself busy like trading crypto */}
+            <div className=" border rounded-md w-32 h-[1.9em] flex items-center justify-center">
+              <a
+                href="/TrevorStrengResume2023CURRENT.pdf"
+                download="TrevorStreng's-Resume"
+                className=""
+              >
+                Download CV
+              </a>
+            </div>
           </div>
         </div>
         <div
