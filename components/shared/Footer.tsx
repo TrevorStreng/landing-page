@@ -13,25 +13,31 @@ export default function Footer() {
           <p className="underline">Contact Me</p>
           <p className="font-semibold">Trevor.streng@yahoo.com</p>
         </div>
-        <div className="flex justify-between">
-          <div className="w-12">
-            <a
-              href="https://github.com/TrevorStreng"
-              target="_blank" // Open in a new tab
-              rel="noopener noreferrer" // Recommended for security
-            >
-              <FontAwesomeIcon icon={faGithub} style={{ color: "#000000" }} />
-            </a>
-          </div>
-          <div className="w-12">
-            <a
-              href="https://www.linkedin.com/in/trevor-streng/"
-              target="_blank" // Open in a new tab
-              rel="noopener noreferrer" // Recommended for security
-            >
-              <FontAwesomeIcon icon={faLinkedin} style={{ color: "#000000" }} />
-            </a>
-          </div>
+        <div className="flex flex-row justify-evenly h-12 w-24 items-center">
+          <a
+            href="https://github.com/TrevorStreng"
+            target="_blank" // Open in a new tab
+            rel="noopener noreferrer" // Recommended for security
+            className="flex w-full h-full items-center"
+          >
+            <FontAwesomeIcon
+              icon={faGithub}
+              style={{ color: "#000000" }}
+              size="2xl"
+            />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/trevor-streng/"
+            target="_blank" // Open in a new tab
+            rel="noopener noreferrer" // Recommended for security
+            className="w-full h-full flex items-center"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              style={{ color: "#000000" }}
+              size="2xl"
+            />
+          </a>
         </div>
       </div>
     </>
