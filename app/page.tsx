@@ -161,13 +161,16 @@ export default function Main() {
           <p>
             I am a new college graduate from Sacramento State, I have a passion
             learning science and technology that shapes the future. My intersts
-            in science and technology so far have included full stack web
-            development, algorithms and I am starting to learn data science and
-            ai. In my free time I try enjoy riding my bike, playing golf and
-            going to the mountains to snowboard.
+            in technology include full stack web development, algorithms and I
+            am starting to learn data science and ai. In my free time I try
+            enjoy riding my bike, playing golf and going to the mountains to
+            snowboard.
           </p>
-          <div id="connect" className="flex w-full justify-evenly pt-2">
-            <div className="flex items-center w-32 border rounded-md h-[1.9em]">
+          <div
+            id="connect"
+            className="flex flex-col md:flex-row w-full justify-evenly pt-2 items-center"
+          >
+            <div className="flex items-center w-32 border rounded-md h-[1.9em] my-2 md:my-0 shadow-md hover:shadow-lg">
               <a
                 href="https://www.linkedin.com/in/trevor-streng/"
                 target="_blank" // Open in a new tab
@@ -184,7 +187,7 @@ export default function Main() {
                 </div>
               </a>
             </div>
-            <div className="flex items-center w-32 border rounded-md h-[1.9em]">
+            <div className="flex items-center w-32 border rounded-md h-[1.9em] my-2 md:my-0 shadow-md hover:shadow-lg">
               <a
                 href="https://github.com/TrevorStreng"
                 target="_blank" // Open in a new tab
@@ -202,7 +205,7 @@ export default function Main() {
               </a>
             </div>
             {/* add something about what im doing to keep myself busy like trading crypto */}
-            <div className=" border rounded-md w-32 h-[1.9em] flex items-center justify-center">
+            <div className=" border rounded-md w-32 h-[1.9em] flex items-center justify-center my-2 md:my-0 shadow-md hover:shadow-lg">
               <a
                 href="/TrevorStrengResume2023CURRENT.pdf"
                 download="TrevorStreng's-Resume"

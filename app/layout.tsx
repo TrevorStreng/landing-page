@@ -25,6 +25,8 @@ export default function RootLayout({
         style={{
           backgroundImage: `url(${selfPortrait.src})`,
           backgroundSize: "cover",
+          // backgroundSize: "contain",
+          // backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}

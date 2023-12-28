@@ -104,11 +104,11 @@ export default function Projects() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center max-w-screen">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center overflow-hidden w-full`}
+            className={`projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center`}
             style={{
               transform: "translateX(100%)",
               transition: "transform 1.5s ease",
@@ -120,7 +120,7 @@ export default function Projects() {
               </h2>
               <p className="my-2">{project.description}</p>
               {project.pics && (
-                <div className="flex justify-center mb-5">
+                <div className="flex justify-center mb-5 max-w-[40rem] md:max-w-full">
                   {project.website ? (
                     <a href={project.website}>
                       <Image

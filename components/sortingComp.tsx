@@ -189,22 +189,22 @@ export default function Sorting() {
       </div>
       <div
         id="main-container"
-        className="flex flex-col items-center max-w-full bg-white"
+        className="flex flex-col items-center max-w-full bg-white max-w-screen"
       >
         <div
           id="viewing-container"
-          className="min-h-64 md:max-h-96 flex justify-center items-end py-2 pt-6"
+          className="min-h-64 md:max-h-96 flex justify-center items-end py-2 pt-6 max-w-screen"
         >
           {array.map((value, index) => (
             <div
               key={index}
-              className="w-2 bg-black m-0.5"
+              className=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
               style={{ height: `${value * 3}px` }}
             ></div>
           ))}
         </div>
         <div>
-          <p id="array" className="text-xs">
+          <p id="array" className="text-xs hidden md:flex">
             [{array.join(",")}]
           </p>
         </div>
