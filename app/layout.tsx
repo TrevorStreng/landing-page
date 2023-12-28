@@ -21,12 +21,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-mono">
       <body
-        className={`${inter.className}`}
+        className={`${inter.className} bg-auto md:bg-cover`}
         style={{
           backgroundImage: `url(${selfPortrait.src})`,
-          backgroundSize: "cover",
-          // backgroundSize: "contain",
-          // backgroundRepeat: "no-repeat",
+          // backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",
         }}
