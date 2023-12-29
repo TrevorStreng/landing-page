@@ -156,7 +156,7 @@ export default function Main() {
       >
         <div
           id="aboutMe"
-          className={`flex flex-col justify-evenly py-2 text-center items-center h-2/3 w-full ${bgColorFromRight}`}
+          className={`flex flex-col justify-evenly py-2 text-center items-center h-2/3 w-full`}
         >
           <h2 className="text-3xl underline">About Me</h2>
           <p className="max-w-[40rem]">
@@ -233,10 +233,7 @@ export default function Main() {
             </div>
           ))}
         </div>
-        <div
-          id="skills"
-          className={`flex flex-col w-full mb-4 ${bgColorFromRight} items-center`}
-        >
+        <div id="skills" className={`flex flex-col w-full mb-4 items-center`}>
           <h3 className="text-3xl underline py-3 text-center">Skills</h3>
           {/* <div className="w-1/2"> */}
           <div className="flex justify-evenly md:w-1/2 w-[88%]">
