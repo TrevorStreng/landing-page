@@ -16,7 +16,8 @@ export default function Main() {
   const graphColor = "bg-gradient-to-r from-lime-600 to-green-800";
   const bgColor1 = "bg-white";
   // const bgColor2 = "bg-slate-50";
-  const bgColor2 = "bg-gradient-to-l from-white to-slate-50";
+  const bgColorFromLeft = "bg-gradient-to-l from-white to-slate-50";
+  const bgColorFromRight = "bg-gradient-to-r from-white to-slate-50";
 
   function barTransition() {
     const element = document.querySelectorAll<HTMLElement>(".graph-bar");
@@ -155,10 +156,10 @@ export default function Main() {
       >
         <div
           id="aboutMe"
-          className="flex flex-col justify-evenly py-2 max-w-[40rem] text-center items-center h-2/3 w-full"
+          className={`flex flex-col justify-evenly py-2 text-center items-center h-2/3 w-full ${bgColorFromRight}`}
         >
           <h2 className="text-3xl underline">About Me</h2>
-          <p>
+          <p className="max-w-[40rem]">
             I am a new college graduate from Sacramento State, I have a passion
             learning science and technology that shapes the future. My intersts
             in technology include full stack web development, algorithms and I
@@ -168,7 +169,7 @@ export default function Main() {
           </p>
           <div
             id="connect"
-            className="flex flex-col md:flex-row w-full justify-evenly pt-2 items-center"
+            className="flex flex-col md:flex-row w-full justify-evenly pt-2 items-center max-w-[40rem]"
           >
             <div className="flex items-center w-32 border rounded-md h-[1.9em] my-2 md:my-0 shadow-md hover:shadow-lg">
               <a
@@ -218,7 +219,7 @@ export default function Main() {
         </div>
         <div
           id="education"
-          className={`flex flex-col justify-center items-center w-1/2 ${bgColor2} w-full`}
+          className={`flex flex-col justify-center items-center ${bgColorFromLeft} w-full`}
         >
           <div className="w-full text-center">
             <h3 className="text-3xl underline py-3">Education</h3>
@@ -232,9 +233,13 @@ export default function Main() {
             </div>
           ))}
         </div>
-        <div id="skills" className="flex flex-col md:w-1/2 w-[88%] mb-4">
+        <div
+          id="skills"
+          className={`flex flex-col w-full mb-4 ${bgColorFromRight} items-center`}
+        >
           <h3 className="text-3xl underline py-3 text-center">Skills</h3>
-          <div className="flex w-full">
+          {/* <div className="w-1/2"> */}
+          <div className="flex justify-evenly md:w-1/2 w-[88%]">
             <nav className="flex w-full justify-evenly pb-3">
               <div>
                 <a
@@ -277,7 +282,7 @@ export default function Main() {
               </div>
             </nav>
           </div>
-          <div className="relative py-2">
+          <div className="relative py-2 md:w-1/2 w-[88%]">
             {selectedSkill === "languages" && (
               <div className="w-full relative z-10 w-full">
                 {skills.languages.map((skill, index) => (
@@ -359,11 +364,12 @@ export default function Main() {
               </div>
             </div>
           </div>
+          {/* </div> */}
         </div>
 
         <div
           id="workHistory"
-          className={`bg-white pb-1 ${bgColor2} w-full text-center`}
+          className={`bg-white pb-1 ${bgColorFromLeft} w-full text-center`}
         >
           <h3 className="text-3xl underline py-3 text-center">Work History</h3>
           <ul>

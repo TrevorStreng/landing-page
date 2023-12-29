@@ -22,6 +22,17 @@
     opacity: 1;
   }
 }
+/* body {
+  background-image: url("./../public/images/wallSelfie.jpg");
+  background-size: "cover";
+  background-position: "center";
+  background-attachment: "fixed";
+}
+@media (min-width: 768px) {
+  .bg-cover {
+    background-image: url("./../public/images/mobilePortait.jpg");
+  }
+} */
 
 /* . {
   font-family: space-mono;

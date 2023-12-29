@@ -110,8 +110,8 @@ export default function Projects() {
             key={index}
             className={`projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center`}
             style={{
-              transform: "translateX(100%)",
-              transition: "transform 1.5s ease",
+              transform: "translateX(-200%)",
+              transition: "transform 1s ease",
             }}
           >
             <div className="max-w-[40rem]">
