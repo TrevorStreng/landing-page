@@ -133,18 +133,20 @@ export default function Main() {
       <div className="relative">
         <div
           id="overPic"
-          className="flex flex-col h-screen items-center sm:relative bg-mobilePortrait bg-wallSelfie sm:w-full w-screen"
+          className="flex flex-col h-screen items-center absolute sm:relative bg-mobilePortrait bg-wallSelfie inset-x-0 top-0 overflow-hidden"
         >
-          <div className="flex flex-col items-end text-right justify-center sm:w-2/3 w-full sm:h-5/6 h-1/2 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
-            <div className="flex text-center justify-end sm:justify-center">
-              <div className="w-1/2 sm:w-full">
+          <div className="flex flex-col items-end text-right justify-end sm:justify-center sm:w-2/3 w-full sm:h-5/6 h-2/3 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
+            {/* <div className="text-center w-full"> */}
+            <div className="flex w-full justify-start sm:justify-end text-center sm:p-0 pb-6 pl-4">
+              <div className="">
                 <p className="text-2xl">Hey, I&apos;m</p> <p>Trevor Streng</p>
               </div>
             </div>
+            {/* </div> */}
           </div>
 
           <div
-            className="flex justify-center items-end h-1/3 sm:pb-0 pb-10 sm:items-center items-end"
+            className="flex justify-center h-1/3 sm:pb-0 pb-10 items-center"
             onClick={() => handleScroll()}
           >
             {showIcon && (
@@ -157,7 +159,7 @@ export default function Main() {
           </div>
         </div>
         <div
-          className="flex flex-col justify-between items-center bg-white px-2 lg:px-0"
+          className="flex flex-col justify-between items-center bg-white px-2 lg:px-0 pt-[100vh] sm:pt-0"
           id="main"
         >
           <div
