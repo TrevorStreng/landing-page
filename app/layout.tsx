@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-mono">
       <body
-        className={`${inter.className} bg-mobilePortrait bg-wallSelfie`}
+        className={`${inter.className} `}
         style={
           {
             // backgroundImage: `url(${selfPortrait.src})`,

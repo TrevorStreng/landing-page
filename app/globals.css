@@ -22,20 +22,11 @@
     opacity: 1;
   }
 }
-/* body {
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  background-size: cover;
-} */
 
 .bg-mobilePortrait {
   background-image: url("./../public/images/mobilePortrait2.jpg");
   background-attachment: fixed;
-  background-size: auto 100vh;
+  background-size: cover;
   background-position: center;
   /* background-repeat: no-repeat; */
 }

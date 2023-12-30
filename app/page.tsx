@@ -130,7 +130,10 @@ export default function Main() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      <div id="overPic" className="flex flex-col h-screen items-center">
+      <div
+        id="overPic"
+        className="flex flex-col h-screen items-center bg-mobilePortrait bg-wallSelfie"
+      >
         <div className="flex flex-col items-end text-right justify-center sm:w-2/3 w-full sm:h-5/6 h-1/2 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
           <div className="flex text-center justify-end sm:justify-center">
             <div className="w-1/2 sm:w-full">
