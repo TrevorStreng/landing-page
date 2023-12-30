@@ -25,13 +25,9 @@
 
 .bg-mobilePortrait {
   background-image: url("./../public/images/mobilePortrait2.jpg");
-  /* background-attachment: fixed; */
   background-size: auto 100vh;
   overflow: hidden;
   background-position: center;
-  /* background-position: absolute; */
-  /* position: absolute; */
-  /* background-repeat: no-repeat; */
 }
 
 @media (min-width: 1024px) {
