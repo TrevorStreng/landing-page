@@ -140,14 +140,14 @@ export default function Main() {
         </div>
 
         <div
-          className="flex justify-center items-end sm:h-1/3 sm:pb-0 pb-10 h-full sm:items-center items-end"
+          className="flex justify-center items-end h-1/3 sm:pb-0 pb-10 sm:items-center items-end"
           onClick={() => handleScroll()}
         >
           {showIcon && (
             <FontAwesomeIcon
               icon={faArrowDown}
-              className="animate-bounce w-14 h-14 sm:text-white"
-              // style={{ color: "white" }}
+              className="animate-bounce w-14 h-14"
+              style={{ color: "white" }}
             />
           )}
         </div>
