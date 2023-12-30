@@ -31,17 +31,17 @@
 
 .bg-mobilePortrait {
   background-image: url("./../public/images/mobilePortrait2.jpg");
-  background-size: "cover";
-  background-position: "center";
-  background-attachment: "fixed";
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 @media (min-width: 1024px) {
   .bg-wallSelfie {
     background-image: url("./../public/images/wallSelfie.jpg");
-    background-size: "cover";
-    background-position: "center";
-    background-attachment: "fixed";
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   }
 }
 

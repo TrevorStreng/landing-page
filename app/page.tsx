@@ -131,21 +131,23 @@ export default function Main() {
         </Script>
       </div>
       <div id="overPic" className="flex flex-col h-screen items-center">
-        <div className="flex flex-col items-end md:text-center text-right justify-center w-2/3 md:h-5/6 h-1/2 text-4xl font-mono text-slate-200 md:text-black ml-6 md:ml-0">
-          <div>
-            <p className="text-2xl">Hey, I&apos;m</p> <p>Trevor Streng</p>
+        <div className="flex flex-col items-end text-right justify-center sm:w-2/3 w-full sm:h-5/6 h-1/2 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
+          <div className="flex text-center justify-end sm:justify-center">
+            <div className="w-1/2 sm:w-full">
+              <p className="text-2xl">Hey, I&apos;m</p> <p>Trevor Streng</p>
+            </div>
           </div>
         </div>
 
         <div
-          className="flex justify-center items-end h-1/3 items-center"
+          className="flex justify-center items-end sm:h-1/3 sm:pb-0 pb-10 h-full sm:items-center items-end"
           onClick={() => handleScroll()}
         >
           {showIcon && (
             <FontAwesomeIcon
               icon={faArrowDown}
-              className="animate-bounce w-14 h-14"
-              style={{ color: "white" }}
+              className="animate-bounce w-14 h-14 sm:text-white"
+              // style={{ color: "white" }}
             />
           )}
         </div>

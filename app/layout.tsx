@@ -23,12 +23,14 @@ export default function RootLayout({
     <html lang="en" className="font-mono">
       <body
         className={`${inter.className} bg-mobilePortrait bg-wallSelfie`}
-        style={{
-          // backgroundImage: `url(${selfPortrait.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-        }}
+        style={
+          {
+            // backgroundImage: `url(${selfPortrait.src})`,
+            // backgroundSize: "cover",
+            // backgroundPosition: "center",
+            // backgroundAttachment: "fixed",
+          }
+        }
       >
         {/* <Header /> */}
         <main>{children}</main>
