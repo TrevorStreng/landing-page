@@ -28,6 +28,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+  /* position: absolute; */
   /* background-repeat: no-repeat; */
 }
 
@@ -37,6 +38,7 @@
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    position: relative;
   }
 }
 
