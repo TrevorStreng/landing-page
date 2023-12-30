@@ -4,8 +4,10 @@
 
 <!-- ![Website Image](public/images/landing-page-pic.jpg) ![Mobile Image](public/images/landing-page-mobile-pic.jpg) -->
 <div style="display: flex;">
-    <img src="public/images/landing-page-pic.jpg" alt="Website Image" style="width: 70%; height: auto; padding: 10px;">
-    <img src="public/images/landing-page-mobile-pic.jpg" alt="Mobile Image" style="width: 25%; height: auto; padding: 10px;">
+    <!-- <img src="public/images/landing-page-pic.jpg" alt="Website Image" style="width: 70%; padding: 10px;">
+    <img src="public/images/landing-page-mobile-pic.jpg" alt="Mobile Image" style="width: 25%; padding: 10px;"> -->
+    <img src="public/images/landing-page-pic.jpg" alt="Website Image" style="width: auto; height: 20rem; object-fit: cover; padding: 10px;">
+    <img src="public/images/landing-page-mobile-pic.jpg" alt="Mobile Image" style="width: auto; height: 20rem; object-fit: cover; padding: 10px;">
 </div>
 
 This website is a simple one page design. It displays a picture of me at the top followed by multiple sections including About Me, Skills, Education, Work History and Projects.
