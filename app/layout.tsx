@@ -5,7 +5,7 @@ import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
 import Image from "next/image";
 import selfPortrait from "public/images/wallSelfie.jpg";
-// import selfPortraitMobile from "public/images/mobilePortait.jpg";
+import selfPortraitMobile from "public/images/mobilePortait.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,9 +22,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="font-mono">
       <body
-        className={`${inter.className} `}
+        className={`${inter.className} bg-mobilePortrait bg-wallSelfie`}
         style={{
-          backgroundImage: `url(${selfPortrait.src})`,
+          // backgroundImage: `url(${selfPortrait.src})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundAttachment: "fixed",

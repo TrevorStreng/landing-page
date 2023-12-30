@@ -131,7 +131,7 @@ export default function Main() {
         </Script>
       </div>
       <div id="overPic" className="flex flex-col h-screen items-center">
-        <div className="flex flex-col items-end text-center justify-center w-2/3 h-5/6 text-4xl font-mono">
+        <div className="flex flex-col items-end md:text-center text-right justify-center w-2/3 md:h-5/6 h-1/2 text-4xl font-mono text-slate-200 md:text-black ml-6 md:ml-0">
           <div>
             <p className="text-2xl">Hey, I&apos;m</p> <p>Trevor Streng</p>
           </div>
