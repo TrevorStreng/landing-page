@@ -28,7 +28,7 @@
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  background-position: absolute;
+  /* background-position: absolute; */
   /* position: absolute; */
   /* background-repeat: no-repeat; */
 }
