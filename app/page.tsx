@@ -133,7 +133,7 @@ export default function Main() {
       <div className="relative">
         <div
           id="overPic"
-          className="flex flex-col h-screen items-center absolute sm:relative bg-mobilePortrait bg-wallSelfie inset-x-0 top-0 overflow-hidden"
+          className="flex flex-col h-screen items-center sm:relative bg-mobilePortrait bg-wallSelfie inset-x-0 top-0 overflow-hidden"
         >
           <div className="flex flex-col items-end text-right justify-end sm:justify-center sm:w-2/3 w-full sm:h-5/6 h-2/3 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
             {/* <div className="text-center w-full"> */}
@@ -159,7 +159,7 @@ export default function Main() {
           </div>
         </div>
         <div
-          className="flex flex-col justify-between items-center bg-white px-2 lg:px-0 pt-[100vh] sm:pt-0"
+          className="flex flex-col justify-between items-center bg-white px-2 sm:pt-0"
           id="main"
         >
           <div
