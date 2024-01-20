@@ -1,9 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { bgColor } from "./../../config";
+import { bgColor } from "@/config";
+// import { bgColor } from "./../../config";
 
 export default function Footer() {
+  const bgColor = "bg-lime-700";
   return (
     <>
       <div

@@ -1,0 +1,845 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main renders a welcome message 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div />
+      <div
+        class="flex flex-col justify-center items-center max-w-screen"
+      >
+        <div
+          class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+          style="transform: translateX(-200%); transition: transform 1s ease;"
+        >
+          <div
+            class="max-w-[40rem]"
+          >
+            <h2
+              class="text-2xl p-4 border-y-4 border-lime-600"
+            >
+              Crypto Trading Bot
+            </h2>
+            <p
+              class="my-2"
+            >
+              This is a automated cryptocurrency trading bot I have been working on. It is built using python and the ccxt library to connect to binanceUS. I have set it up to fetch data every minute that calculates moving averages based on the closing price of the last 5, 8, and 13 minutes. It then buys if the 5 and 8 minute moving averages move above the 13 minute average and sells if both of them go below the 13 minute average. I have it running on a raspberry pi and am logging all trades to see if there is any errors that might occur.
+            </p>
+            <div
+              class="pt-2 w-full flex justify-evenly"
+            >
+              <a
+                class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                href="https://github.com/TrevorStreng/cryptoBot"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View on Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+          style="transform: translateX(-200%); transition: transform 1s ease;"
+        >
+          <div
+            class="max-w-[40rem]"
+          >
+            <h2
+              class="text-2xl p-4 border-y-4 border-lime-600"
+            >
+              Tea Rex
+            </h2>
+            <p
+              class="my-2"
+            >
+              For my senior project I worked on a website for a local boba tea shop. Our client requested a website for her restaurant that would allow customers to order directly from the website and have those orders printed out at the restaurant.
+            </p>
+            <div
+              class="flex justify-center mb-5 max-w-[40rem] md:max-w-full"
+            >
+              <a
+                href="https://tea-rex.vercel.app/"
+              >
+                <img
+                  alt="Picture of sorting simulator"
+                  class="py-2"
+                  data-nimg="1"
+                  decoding="async"
+                  height="500"
+                  loading="lazy"
+                  src="/_next/image?url=%2Fimages%2FteaRex.jpg&w=2048&q=75"
+                  srcset="/_next/image?url=%2Fimages%2FteaRex.jpg&w=1080&q=75 1x, /_next/image?url=%2Fimages%2FteaRex.jpg&w=2048&q=75 2x"
+                  style="color: transparent;"
+                  width="1000"
+                />
+              </a>
+            </div>
+            <div
+              class="pt-2 w-full flex justify-evenly"
+            >
+              <a
+                class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                href="https://github.com/khanhtruong0808/tea-rex"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View on Github
+              </a>
+              <a
+                class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                href="https://tea-rex.vercel.app/"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                tea-rex.vercel.app
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+          style="transform: translateX(-200%); transition: transform 1s ease;"
+        >
+          <div
+            class="max-w-[40rem]"
+          >
+            <h2
+              class="text-2xl p-4 border-y-4 border-lime-600"
+            >
+              Sorting Simulator
+            </h2>
+            <p
+              class="my-2"
+            >
+              This is a simulator that allows you to visualize how different sorting algorithms run.
+            </p>
+            <div
+              class="pt-2 w-full flex justify-evenly"
+            >
+              <div>
+                <div />
+                <div
+                  class="flex flex-col items-center max-w-full bg-white max-w-screen"
+                  id="main-container"
+                >
+                  <div
+                    class="min-h-64 md:max-h-96 flex justify-center items-end py-2 pt-6 max-w-screen"
+                    id="viewing-container"
+                  >
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 30px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 27px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 24px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 21px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 18px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 15px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 12px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 9px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 6px;"
+                    />
+                    <div
+                      class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                      style="height: 3px;"
+                    />
+                  </div>
+                  <div>
+                    <p
+                      class="text-xs hidden md:flex"
+                      id="array"
+                    >
+                      [
+                      10,9,8,7,6,5,4,3,2,1
+                      ]
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-wrap items-center text-center justify-evenly w-3/4 lg:w-1/2 h-1/2 lg:my-2 border rounded-xl p-2"
+                  >
+                    <div
+                      class="max-w-full"
+                    >
+                      <p>
+                        Input the length of the array
+                      </p>
+                      <p>
+                        Must be between 1-100
+                      </p>
+                      <input
+                        class="border border-black max-w-full"
+                        type="number"
+                        value="10"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col items-center text-center my-2 lg:my-0 "
+                    >
+                      <label
+                        for="algorithms"
+                      >
+                        Select a sorting algorithm
+                      </label>
+                      <select
+                        class="border border-black"
+                        id="algorithms"
+                        name="algorithms"
+                      >
+                        <option
+                          value="bubbleSort"
+                        >
+                          Bubble sort
+                        </option>
+                        <option
+                          value="selectionSort"
+                        >
+                          Selection Sort
+                        </option>
+                        <option
+                          value="insertionSort"
+                        >
+                          Insertion Sort
+                        </option>
+                        <option
+                          value="mergeSort"
+                        >
+                          Merge Sort
+                        </option>
+                        <option
+                          value="quickSort"
+                        >
+                          Quick Sort
+                        </option>
+                      </select>
+                      <p
+                        class="hidden text-red-400 text-sm"
+                      >
+                        *This algorithm was implmented in an iterative way for visualization purposes.
+                      </p>
+                    </div>
+                    <div
+                      class="flex flex-col items-center text-center"
+                    >
+                      <label
+                        for="algorithms"
+                      >
+                        Select speed
+                      </label>
+                      <select
+                        class="border border-black"
+                        id="speedSelector"
+                        name="speedSelector"
+                      >
+                        <option
+                          value="25"
+                        >
+                          fast
+                        </option>
+                        <option
+                          value="75"
+                        >
+                          normal
+                        </option>
+                        <option
+                          value="150"
+                        >
+                          slow
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col h-32 justify-around"
+                  >
+                    <button
+                      class="border border-lime-700 p-2 rounded-xl"
+                    >
+                      Randomize Array
+                    </button>
+                    <button
+                      class="border border-lime-700 p-2 rounded-xl"
+                    >
+                      Sort
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+          style="transform: translateX(-200%); transition: transform 1s ease;"
+        >
+          <div
+            class="max-w-[40rem]"
+          >
+            <h2
+              class="text-2xl p-4 border-y-4 border-lime-600"
+            >
+              Chess Timer App
+            </h2>
+            <p
+              class="my-2"
+            >
+              This is an app to keep time of people when they are playing chess. It is just a basic app made using React Native. It consists of two pages, the main timer page and a settings page where you can change the color for each player and a way to set the time to a custom time of the users choice.
+            </p>
+            <div
+              class="flex justify-center mb-5 max-w-[40rem] md:max-w-full"
+            >
+              <img
+                alt="Picture of chess Clock app main screen"
+                class="rounded-3xl py-2"
+                data-nimg="1"
+                decoding="async"
+                height="358"
+                loading="lazy"
+                src="/_next/image?url=%2Fimages%2FchessClockMain.PNG&w=384&q=75"
+                srcset="/_next/image?url=%2Fimages%2FchessClockMain.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2FchessClockMain.PNG&w=384&q=75 2x"
+                style="color: transparent;"
+                width="164"
+              />
+            </div>
+            <div
+              class="pt-2 w-full flex justify-evenly"
+            >
+              <a
+                class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                href="https://github.com/TrevorStreng/mobileClock"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View on Github
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+          style="transform: translateX(-200%); transition: transform 1s ease;"
+        >
+          <div
+            class="max-w-[40rem]"
+          >
+            <h2
+              class="text-2xl p-4 border-y-4 border-lime-600"
+            >
+              Robot Game
+            </h2>
+            <p
+              class="my-2"
+            >
+              This is the Robot Game we worked on in our Object Oriented Computer Graphics programming class. The goal is to get the player robot to all of the bases without running out of energy or taking too much damage from other robots or drones.
+            </p>
+            <div
+              class="flex justify-center mb-5 max-w-[40rem] md:max-w-full"
+            >
+              <img
+                alt="Picture of robot game"
+                class="py-2"
+                data-nimg="1"
+                decoding="async"
+                height="435"
+                loading="lazy"
+                src="/_next/image?url=%2Fimages%2FrobotGame.jpg&w=1200&q=75"
+                srcset="/_next/image?url=%2Fimages%2FrobotGame.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2FrobotGame.jpg&w=1200&q=75 2x"
+                style="color: transparent;"
+                width="600"
+              />
+            </div>
+            <div
+              class="pt-2 w-full flex justify-evenly"
+            >
+              <a
+                class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                href="https://github.com/TrevorStreng/Csc133"
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                View on Github
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      async="true"
+      data-nscript="afterInteractive"
+      src="https://www.googletagmanager.com/gtag/js?id=G-SSHP15V2W1"
+    />
+    <script
+      data-nscript="afterInteractive"
+      id="google-analytics"
+    >
+      window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-SSHP15V2W1');
+    </script>
+  </body>,
+  "container": <div>
+    <div />
+    <div
+      class="flex flex-col justify-center items-center max-w-screen"
+    >
+      <div
+        class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+        style="transform: translateX(-200%); transition: transform 1s ease;"
+      >
+        <div
+          class="max-w-[40rem]"
+        >
+          <h2
+            class="text-2xl p-4 border-y-4 border-lime-600"
+          >
+            Crypto Trading Bot
+          </h2>
+          <p
+            class="my-2"
+          >
+            This is a automated cryptocurrency trading bot I have been working on. It is built using python and the ccxt library to connect to binanceUS. I have set it up to fetch data every minute that calculates moving averages based on the closing price of the last 5, 8, and 13 minutes. It then buys if the 5 and 8 minute moving averages move above the 13 minute average and sells if both of them go below the 13 minute average. I have it running on a raspberry pi and am logging all trades to see if there is any errors that might occur.
+          </p>
+          <div
+            class="pt-2 w-full flex justify-evenly"
+          >
+            <a
+              class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+              href="https://github.com/TrevorStreng/cryptoBot"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View on Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+        style="transform: translateX(-200%); transition: transform 1s ease;"
+      >
+        <div
+          class="max-w-[40rem]"
+        >
+          <h2
+            class="text-2xl p-4 border-y-4 border-lime-600"
+          >
+            Tea Rex
+          </h2>
+          <p
+            class="my-2"
+          >
+            For my senior project I worked on a website for a local boba tea shop. Our client requested a website for her restaurant that would allow customers to order directly from the website and have those orders printed out at the restaurant.
+          </p>
+          <div
+            class="flex justify-center mb-5 max-w-[40rem] md:max-w-full"
+          >
+            <a
+              href="https://tea-rex.vercel.app/"
+            >
+              <img
+                alt="Picture of sorting simulator"
+                class="py-2"
+                data-nimg="1"
+                decoding="async"
+                height="500"
+                loading="lazy"
+                src="/_next/image?url=%2Fimages%2FteaRex.jpg&w=2048&q=75"
+                srcset="/_next/image?url=%2Fimages%2FteaRex.jpg&w=1080&q=75 1x, /_next/image?url=%2Fimages%2FteaRex.jpg&w=2048&q=75 2x"
+                style="color: transparent;"
+                width="1000"
+              />
+            </a>
+          </div>
+          <div
+            class="pt-2 w-full flex justify-evenly"
+          >
+            <a
+              class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+              href="https://github.com/khanhtruong0808/tea-rex"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View on Github
+            </a>
+            <a
+              class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+              href="https://tea-rex.vercel.app/"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              tea-rex.vercel.app
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+        style="transform: translateX(-200%); transition: transform 1s ease;"
+      >
+        <div
+          class="max-w-[40rem]"
+        >
+          <h2
+            class="text-2xl p-4 border-y-4 border-lime-600"
+          >
+            Sorting Simulator
+          </h2>
+          <p
+            class="my-2"
+          >
+            This is a simulator that allows you to visualize how different sorting algorithms run.
+          </p>
+          <div
+            class="pt-2 w-full flex justify-evenly"
+          >
+            <div>
+              <div />
+              <div
+                class="flex flex-col items-center max-w-full bg-white max-w-screen"
+                id="main-container"
+              >
+                <div
+                  class="min-h-64 md:max-h-96 flex justify-center items-end py-2 pt-6 max-w-screen"
+                  id="viewing-container"
+                >
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 30px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 27px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 24px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 21px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 18px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 15px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 12px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 9px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 6px;"
+                  />
+                  <div
+                    class=" w-[0.05rem] md:w-2 bg-black md:m-0.5 m-[0.1rem]"
+                    style="height: 3px;"
+                  />
+                </div>
+                <div>
+                  <p
+                    class="text-xs hidden md:flex"
+                    id="array"
+                  >
+                    [
+                    10,9,8,7,6,5,4,3,2,1
+                    ]
+                  </p>
+                </div>
+                <div
+                  class="flex flex-wrap items-center text-center justify-evenly w-3/4 lg:w-1/2 h-1/2 lg:my-2 border rounded-xl p-2"
+                >
+                  <div
+                    class="max-w-full"
+                  >
+                    <p>
+                      Input the length of the array
+                    </p>
+                    <p>
+                      Must be between 1-100
+                    </p>
+                    <input
+                      class="border border-black max-w-full"
+                      type="number"
+                      value="10"
+                    />
+                  </div>
+                  <div
+                    class="flex flex-col items-center text-center my-2 lg:my-0 "
+                  >
+                    <label
+                      for="algorithms"
+                    >
+                      Select a sorting algorithm
+                    </label>
+                    <select
+                      class="border border-black"
+                      id="algorithms"
+                      name="algorithms"
+                    >
+                      <option
+                        value="bubbleSort"
+                      >
+                        Bubble sort
+                      </option>
+                      <option
+                        value="selectionSort"
+                      >
+                        Selection Sort
+                      </option>
+                      <option
+                        value="insertionSort"
+                      >
+                        Insertion Sort
+                      </option>
+                      <option
+                        value="mergeSort"
+                      >
+                        Merge Sort
+                      </option>
+                      <option
+                        value="quickSort"
+                      >
+                        Quick Sort
+                      </option>
+                    </select>
+                    <p
+                      class="hidden text-red-400 text-sm"
+                    >
+                      *This algorithm was implmented in an iterative way for visualization purposes.
+                    </p>
+                  </div>
+                  <div
+                    class="flex flex-col items-center text-center"
+                  >
+                    <label
+                      for="algorithms"
+                    >
+                      Select speed
+                    </label>
+                    <select
+                      class="border border-black"
+                      id="speedSelector"
+                      name="speedSelector"
+                    >
+                      <option
+                        value="25"
+                      >
+                        fast
+                      </option>
+                      <option
+                        value="75"
+                      >
+                        normal
+                      </option>
+                      <option
+                        value="150"
+                      >
+                        slow
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <div
+                  class="flex flex-col h-32 justify-around"
+                >
+                  <button
+                    class="border border-lime-700 p-2 rounded-xl"
+                  >
+                    Randomize Array
+                  </button>
+                  <button
+                    class="border border-lime-700 p-2 rounded-xl"
+                  >
+                    Sort
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+        style="transform: translateX(-200%); transition: transform 1s ease;"
+      >
+        <div
+          class="max-w-[40rem]"
+        >
+          <h2
+            class="text-2xl p-4 border-y-4 border-lime-600"
+          >
+            Chess Timer App
+          </h2>
+          <p
+            class="my-2"
+          >
+            This is an app to keep time of people when they are playing chess. It is just a basic app made using React Native. It consists of two pages, the main timer page and a settings page where you can change the color for each player and a way to set the time to a custom time of the users choice.
+          </p>
+          <div
+            class="flex justify-center mb-5 max-w-[40rem] md:max-w-full"
+          >
+            <img
+              alt="Picture of chess Clock app main screen"
+              class="rounded-3xl py-2"
+              data-nimg="1"
+              decoding="async"
+              height="358"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FchessClockMain.PNG&w=384&q=75"
+              srcset="/_next/image?url=%2Fimages%2FchessClockMain.PNG&w=256&q=75 1x, /_next/image?url=%2Fimages%2FchessClockMain.PNG&w=384&q=75 2x"
+              style="color: transparent;"
+              width="164"
+            />
+          </div>
+          <div
+            class="pt-2 w-full flex justify-evenly"
+          >
+            <a
+              class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+              href="https://github.com/TrevorStreng/mobileClock"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View on Github
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center"
+        style="transform: translateX(-200%); transition: transform 1s ease;"
+      >
+        <div
+          class="max-w-[40rem]"
+        >
+          <h2
+            class="text-2xl p-4 border-y-4 border-lime-600"
+          >
+            Robot Game
+          </h2>
+          <p
+            class="my-2"
+          >
+            This is the Robot Game we worked on in our Object Oriented Computer Graphics programming class. The goal is to get the player robot to all of the bases without running out of energy or taking too much damage from other robots or drones.
+          </p>
+          <div
+            class="flex justify-center mb-5 max-w-[40rem] md:max-w-full"
+          >
+            <img
+              alt="Picture of robot game"
+              class="py-2"
+              data-nimg="1"
+              decoding="async"
+              height="435"
+              loading="lazy"
+              src="/_next/image?url=%2Fimages%2FrobotGame.jpg&w=1200&q=75"
+              srcset="/_next/image?url=%2Fimages%2FrobotGame.jpg&w=640&q=75 1x, /_next/image?url=%2Fimages%2FrobotGame.jpg&w=1200&q=75 2x"
+              style="color: transparent;"
+              width="600"
+            />
+          </div>
+          <div
+            class="pt-2 w-full flex justify-evenly"
+          >
+            <a
+              class="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+              href="https://github.com/TrevorStreng/Csc133"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View on Github
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

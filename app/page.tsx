@@ -11,7 +11,6 @@ import Projects from "./../components/projectsComp";
 // ! Fix homepage for mobile and ipad
 // export const bgColor = "bg-lime-700";
 export default function Main() {
-  const [showIcon, setShowIcon] = useState(true);
   const [selectedSkill, setSelectedSkill] = useState("languages");
   const graphColor = "bg-gradient-to-r from-lime-600 to-green-800";
   const bgColor1 = "bg-white";
@@ -39,6 +38,7 @@ export default function Main() {
         }
       }
     });
+    // handle when a new section is clicked on
     const scrollPos = window.scrollY;
     const elementPos = document
       .getElementById("skills")
@@ -51,7 +51,7 @@ export default function Main() {
     }
   });
   const handleScroll = () => {
-    const element = document.getElementById("aboutMe"); // Change this to the desired section ID
+    const element = document.getElementById("aboutMe");
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
@@ -69,23 +69,23 @@ export default function Main() {
       { name: "x86 Assembly", value: 5 },
     ],
     framesWorks: [
-      { name: "NodeJS", value: 7 },
+      { name: "NodeJS", value: 7.5 },
       { name: "Next.js", value: 6 },
       { name: "React", value: 7 },
-      { name: "React Native", value: 6 },
-      { name: "Tailwind CSS", value: 9.5 },
+      { name: "React Native", value: 5 },
+      { name: "Tailwind CSS", value: 8 },
       { name: "Codename One", value: 5 },
       { name: "Prisma ORM", value: 5 },
-      { name: "Sequelize", value: 7 },
+      { name: "Sequelize", value: 6 },
       { name: "Mongoose", value: 7 },
     ],
     tools: [
-      { name: "Git", value: 6 },
+      { name: "Git", value: 6.5 },
       { name: "Postman", value: 5 },
       { name: "Jira", value: 5 },
       { name: "Wireshark", value: 3 },
       { name: "MongoDB", value: 6 },
-      { name: "MySQL", value: 8 },
+      { name: "MySQL", value: 7 },
     ],
   };
 
@@ -136,26 +136,21 @@ export default function Main() {
           className="flex flex-col h-screen items-center sm:relative bg-mobilePortrait bg-wallSelfie inset-x-0 top-0 overflow-hidden"
         >
           <div className="flex flex-col items-end text-right justify-end sm:justify-center sm:w-2/3 w-full sm:h-5/6 h-2/3 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
-            {/* <div className="text-center w-full"> */}
             <div className="flex w-full justify-start sm:justify-end text-center sm:p-0 pb-6 pl-4">
               <div className="">
                 <p className="text-2xl">Hey, I&apos;m</p> <p>Trevor Streng</p>
               </div>
             </div>
-            {/* </div> */}
           </div>
 
-          <div
-            className="flex justify-center h-1/3 sm:pb-0 pb-10 items-center"
-            onClick={() => handleScroll()}
-          >
-            {showIcon && (
+          <div className="flex justify-center h-1/3 sm:pb-0 pb-10 items-center">
+            <div onClick={() => handleScroll()} id="arrowIcon">
               <FontAwesomeIcon
                 icon={faArrowDown}
                 className="animate-bounce w-14 h-14"
                 style={{ color: "white" }}
               />
-            )}
+            </div>
           </div>
         </div>
         <div
@@ -213,7 +208,6 @@ export default function Main() {
                   </div>
                 </a>
               </div>
-              {/* add something about what im doing to keep myself busy like trading crypto */}
               <div className=" border rounded-md w-32 h-[1.9em] flex items-center justify-center my-2 md:my-0 shadow-md hover:shadow-lg">
                 <a
                   href="/TrevorStrengResume2023CURRENT.pdf"
@@ -245,7 +239,6 @@ export default function Main() {
           </div>
           <div id="skills" className={`flex flex-col w-full mb-4 items-center`}>
             <h3 className="text-3xl underline py-3 text-center">Skills</h3>
-            {/* <div className="w-1/2"> */}
             <div className="flex justify-evenly md:w-1/2 w-[88%]">
               <nav className="flex w-full justify-evenly pb-3">
                 <div>
@@ -371,7 +364,6 @@ export default function Main() {
                 </div>
               </div>
             </div>
-            {/* </div> */}
           </div>
 
           <div
@@ -406,23 +398,6 @@ export default function Main() {
           className="w-screen md:w-1/2 object-contain flex justify-center items-center bg-white rounded-3xl py-3 px-4"
         >
           <Weather />
-        </div> */}
-          {/* <div
-          id="Contact"
-          className={`flex flex-col w-1/2 ${bgColor2} w-full items-center text-center`}
-        >
-          <h3 className="text-3xl underline py-3 text-center">Contact</h3>
-          <div
-            className={`${graphColor} rounded-xl w-32 h-10 flex items-center justify-center`}
-          >
-            <a
-              href="/TrevorStrengResume2023CURRENT.pdf"
-              download="TrevorStreng's-Resume"
-              className=""
-            >
-              Download CV
-            </a>
-          </div>
         </div> */}
         </div>
       </div>

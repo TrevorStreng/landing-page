@@ -7,6 +7,20 @@ import { useEffect } from "react";
 export default function Projects() {
   const projects = [
     {
+      name: "Feed",
+      link: "https://github.com/TrevorStreng/Feed",
+      description:
+        "Feed is a messaging board website that allows users to create an account, and post messages to the main page. It was created with Next.js on the frontend and Node.js and Express on the backend. Feed takes advantage of both a Rest api for creating user accounts, logging in, reseting passwords and storing posts, as well as web sockets to update posts in real time. This project will be finished shortly.",
+      github: true,
+      pics: {
+        src: "/images/feedPic.jpg",
+        width: 1000,
+        height: 500,
+        alt: "Picture of sorting simulator",
+        style: "py-2",
+      },
+    },
+    {
       name: "Crypto Trading Bot",
       link: "https://github.com/TrevorStreng/cryptoBot",
       description:
