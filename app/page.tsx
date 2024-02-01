@@ -59,7 +59,7 @@ export default function Main() {
 
   const skills = {
     languages: [
-      { name: "Javascript", value: 8 },
+      { name: "Javascript", value: 7.5 },
       { name: "Java", value: 6 },
       { name: "HTML", value: 7.5 },
       { name: "CSS", value: 7 },
@@ -70,6 +70,7 @@ export default function Main() {
     ],
     framesWorks: [
       { name: "NodeJS", value: 7.5 },
+      { name: "Express", value: 7 },
       { name: "Next.js", value: 6 },
       { name: "React", value: 7 },
       { name: "React Native", value: 5 },
@@ -210,7 +211,7 @@ export default function Main() {
               </div>
               <div className=" border rounded-md w-32 h-[1.9em] flex items-center justify-center my-2 md:my-0 shadow-md hover:shadow-lg">
                 <a
-                  href="/TrevorStrengResume2023CURRENT.pdf"
+                  href="/TrevorStrengResume2024CURRENT.pdf"
                   download="TrevorStreng's-Resume"
                   className=""
                 >
