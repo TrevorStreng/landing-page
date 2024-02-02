@@ -76,7 +76,7 @@ export default function Main() {
       { name: "React Native", value: 5 },
       { name: "Tailwind CSS", value: 8 },
       { name: "Codename One", value: 5 },
-      { name: "Prisma ORM", value: 5 },
+      { name: "Prisma ORM", value: 4 },
       { name: "Sequelize", value: 6 },
       { name: "Mongoose", value: 7 },
     ],
