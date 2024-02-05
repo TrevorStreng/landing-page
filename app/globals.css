@@ -32,7 +32,7 @@
 
 @media (min-width: 1024px) {
   .bg-wallSelfie {
-    background-image: url("./../public/images/wallSelfie.jpg");
+    background-image: url("./../public/images/wallSelfie.webp");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
