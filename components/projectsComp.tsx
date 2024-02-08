@@ -9,8 +9,10 @@ export default function Projects() {
     {
       name: "Feed",
       link: "https://github.com/TrevorStreng/Feed",
+      website_name: "feed-friends.vercel.app",
+      website: "https://feed-friends.vercel.app/",
       description:
-        "Feed is a messaging board website that allows users to create an account, and post messages to the main page. It was created with Next.js on the frontend and Node.js and Express on the backend. Feed takes advantage of both a Rest api for creating user accounts, logging in, reseting passwords and storing posts, as well as web sockets to update posts in real time. This project will be finished shortly.",
+        "Feed is a messaging board website that allows users to create an account, and post messages to the main page. It was created with Next.js on the frontend and Node.js and Express on the backend. Feed takes advantage of both a Rest api for creating user accounts, logging in, reseting passwords and storing posts, as well as web sockets to update posts in real time.",
       github: true,
       pics: {
         src: "/images/FeedPic.jpg",
