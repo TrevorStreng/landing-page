@@ -7,7 +7,6 @@ import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Projects from "./../components/projectsComp";
-import Picture from "@/components/pictureComp";
 
 // ! Fix homepage for mobile and ipad
 // export const bgColor = "bg-lime-700";
@@ -132,9 +131,6 @@ export default function Main() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      {/* <div className="h-screen absolute"> */}
-      <Picture />
-      {/* </div> */}
       <div className="relative">
         <div
           id="overPic"
