@@ -7,6 +7,7 @@ import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useState } from "react";
 import Projects from "./../components/projectsComp";
+import Picture from "@/components/pictureComp";
 
 // ! Fix homepage for mobile and ipad
 // export const bgColor = "bg-lime-700";
@@ -131,6 +132,9 @@ export default function Main() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
+      {/* <div className="h-screen absolute"> */}
+      <Picture />
+      {/* </div> */}
       <div className="relative">
         <div
           id="overPic"
@@ -145,10 +149,10 @@ export default function Main() {
           </div>
 
           <div className="flex justify-center h-1/3 sm:pb-0 pb-10 items-center">
-            <div onClick={() => handleScroll()} id="arrowIcon">
+            <div onClick={() => handleScroll()} id="arrowIconContainer">
               <FontAwesomeIcon
                 icon={faArrowDown}
-                className="animate-bounce w-14 h-14"
+                className="animate-bounce w-14 h-14 arrowIcon"
                 style={{ color: "white" }}
               />
             </div>
