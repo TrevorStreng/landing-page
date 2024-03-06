@@ -28,7 +28,8 @@
 }
 
 .bg-mobilePortrait {
-  background-image: url("./../public/images/mobilePortrait2.jpg");
+  background-image: url("https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752121/landing-page/mobilePortrait2_ik1tzi.jpg");
+  /* background-image: url("./../public/images/mobilePortrait2.jpg"); */
   background-size: auto 100vh;
   overflow: hidden;
   background-position: center;
@@ -36,7 +37,8 @@
 
 @media (min-width: 1024px) {
   .bg-wallSelfie {
-    background-image: url("./../public/images/wallSelfie.webp");
+    background-image: url("https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752111/landing-page/wallSelfie_ggcnqy.webp");
+    /* background-image: url("./../public/images/wallSelfie.webp"); */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
