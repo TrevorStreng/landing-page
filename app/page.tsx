@@ -211,7 +211,7 @@ export default function Main() {
               </div>
               <div className=" border rounded-md w-32 h-[1.9em] flex items-center justify-center my-2 md:my-0 shadow-md hover:shadow-lg">
                 <a
-                  href="/TrevorStrengResume2024CURRENT.pdf"
+                  href="/TrevorStrengResume2024_CURRENT.pdf"
                   download="TrevorStreng's-Resume"
                   className=""
                 >
