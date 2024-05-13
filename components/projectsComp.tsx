@@ -7,6 +7,21 @@ import { useEffect } from "react";
 export default function Projects() {
   const projects = [
     {
+      name: "Cart2Go",
+      link: "https://github.com/TrevorStreng/shopping_list",
+      website_name: "Cart2Go",
+      website: "https://blue-mushroom-0e5dd471e.5.azurestaticapps.net/",
+      description: "",
+      github: true,
+      pics: {
+        src: "/images/Cart2GoScreenshot.jpg",
+        width: 250,
+        height: 100,
+        alt: "Picture of Cart2Go shopping list website.",
+        style: "py-2",
+      },
+    },
+    {
       name: "Feed",
       link: "https://github.com/TrevorStreng/Feed",
       website_name: "feed-friends.vercel.app",
