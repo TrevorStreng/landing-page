@@ -27,12 +27,14 @@
   height: 3.5rem !important;
 }
 
-.bg-mobilePortrait {
-  background-image: url("https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752121/landing-page/mobilePortrait2_ik1tzi.jpg");
-  /* background-image: url("./../public/images/mobilePortrait2.jpg"); */
-  background-size: auto 100vh;
-  overflow: hidden;
-  background-position: center;
+@media (max-width: 1024px) {
+  .bg-mobilePortrait {
+    background-image: url("https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752121/landing-page/mobilePortrait2_ik1tzi.jpg");
+    /* background-image: url("./../public/images/mobilePortrait2.jpg"); */
+    background-size: auto 100vh;
+    overflow: hidden;
+    background-position: center;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -43,5 +45,24 @@
     background-position: center;
     background-attachment: fixed;
     position: relative;
+  }
+}
+
+.loading-spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
