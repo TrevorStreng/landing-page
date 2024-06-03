@@ -14,7 +14,7 @@ export default function Projects() {
       description: "",
       github: true,
       pics: {
-        src: "/images/Cart2goScreenshot.jpg",
+        src: "/images/cart2goScreenshot.jpg",
         width: 250,
         height: 100,
         alt: "Picture of Cart2Go shopping list website.",
