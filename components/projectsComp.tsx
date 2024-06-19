@@ -168,7 +168,7 @@ export default function Projects() {
                   />
                 </div>
               )}
-              {project.videos && <div>hello</div>}
+              {/* {project.videos && <div>hello</div>} */}
               <div className="pt-2 w-full flex justify-evenly">
                 {project.link && (
                   <a
