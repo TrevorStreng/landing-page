@@ -6,13 +6,27 @@ import { useEffect } from "react";
 
 export default function Projects() {
   const projects = [
+    // {
+    //   name: "Face Detector",
+    //   link: "https://github.com/TrevorStreng/face_detector",
+    //   description:
+    //     "An AI face detector app built with python and Opencv. Can be used with photos, videos, or webcams.",
+    //   videos: {
+    //     src1: "",
+    //     src2: "",
+    //     width: 250,
+    //     height: 100,
+    //     alt1: "Video with face detection on.",
+    //     alt2: "Original video with no face detection.",
+    //   },
+    // },
     {
       name: "Cart2Go",
       link: "https://github.com/TrevorStreng/shopping_list",
       website_name: "Cart2Go",
       website: "https://blue-mushroom-0e5dd471e.5.azurestaticapps.net/",
-      description: "",
-      github: true,
+      description:
+        "Cart2Go is a shopping list website. It allows users to add things to their cart and sort into customized sections. It is built with Vue.js on the frontend, ASP.NET core on the backend, and Microsoft SQL to store data.",
       pics: {
         src: "/images/Cart2GoScreenshot.jpg",
         width: 250,
@@ -28,7 +42,6 @@ export default function Projects() {
       website: "https://feed-friends.vercel.app/",
       description:
         "Feed is a messaging board website that allows users to create an account, and post messages to the main page. It was created with Next.js on the frontend and Node.js and Express on the backend. Feed takes advantage of both a Rest api for creating user accounts, logging in, reseting passwords and storing posts, as well as web sockets to update posts in real time.",
-      github: true,
       pics: {
         src: "/images/FeedPic.jpg",
         width: 1000,
@@ -42,7 +55,6 @@ export default function Projects() {
       link: "https://github.com/TrevorStreng/cryptoBot",
       description:
         "This is a automated cryptocurrency trading bot I have been working on. It is built using python and the ccxt library to connect to binanceUS. I have set it up to fetch data every minute that calculates moving averages based on the closing price of the last 5, 8, and 13 minutes. It then buys if the 5 and 8 minute moving averages move above the 13 minute average and sells if both of them go below the 13 minute average. I have it running on a raspberry pi and am logging all trades to see if there is any errors that might occur.",
-      github: true,
     },
     {
       name: "Tea Rex",
@@ -51,7 +63,6 @@ export default function Projects() {
       website: "https://tea-rex.vercel.app/",
       description:
         "For my senior project I worked on a website for a local boba tea shop. Our client requested a website for her restaurant that would allow customers to order directly from the website and have those orders printed out at the restaurant.",
-      github: true,
       pics: {
         src: "/images/teaRex.jpg",
         width: 1000,
@@ -62,10 +73,8 @@ export default function Projects() {
     },
     {
       name: "Sorting Simulator",
-      link: "/projects/sorting",
       description:
         "This is a simulator that allows you to visualize how different sorting algorithms run.",
-      github: false,
       sort: true,
     },
     {
@@ -73,7 +82,6 @@ export default function Projects() {
       link: "https://github.com/TrevorStreng/mobileClock",
       description:
         "This is an app to keep time of people when they are playing chess. It is just a basic app made using React Native. It consists of two pages, the main timer page and a settings page where you can change the color for each player and a way to set the time to a custom time of the users choice.",
-      github: true,
       pics: {
         src: "/images/chessClockMain.PNG",
         width: 82 * 2,
@@ -87,7 +95,6 @@ export default function Projects() {
       link: "https://github.com/TrevorStreng/Csc133",
       description:
         "This is the Robot Game we worked on in our Object Oriented Computer Graphics programming class. The goal is to get the player robot to all of the bases without running out of energy or taking too much damage from other robots or drones.",
-      github: true,
       pics: {
         src: "/images/robotGame.jpg",
         width: 120 * 5,
@@ -119,7 +126,6 @@ export default function Projects() {
   });
 
   return (
-    // ! Add a picture for each project
     <>
       <div>
         {/* <!-- Google tag (gtag.js) --> */}
@@ -152,31 +158,19 @@ export default function Projects() {
               <p className="my-2">{project.description}</p>
               {project.pics && (
                 <div className="flex justify-center mb-5 max-w-[40rem] md:max-w-full">
-                  {project.website ? (
-                    <a href={project.website}>
-                      <Image
-                        src={project.pics.src}
-                        alt={project.pics.alt}
-                        width={project.pics.width}
-                        height={project.pics.height}
-                        className={project.pics.style}
-                      />
-                    </a>
-                  ) : (
-                    <>
-                      <Image
-                        src={project.pics.src}
-                        alt={project.pics.alt}
-                        width={project.pics.width}
-                        height={project.pics.height}
-                        className={project.pics.style}
-                      />
-                    </>
-                  )}
+                  {project.website && <a href={project.website}></a>}
+                  <Image
+                    src={project.pics.src}
+                    alt={project.pics.alt}
+                    width={project.pics.width}
+                    height={project.pics.height}
+                    className={project.pics.style}
+                  />
                 </div>
               )}
+              {project.videos && <div>hello</div>}
               <div className="pt-2 w-full flex justify-evenly">
-                {project.github && (
+                {project.link && (
                   <a
                     href={project.link}
                     target="_blank" // Open in a new tab
