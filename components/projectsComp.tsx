@@ -28,7 +28,7 @@ export default function Projects() {
       description:
         "Cart2Go is a shopping list website. It allows users to add things to their cart and sort into customized sections. It is built with Vue.js on the frontend, ASP.NET core on the backend, and Microsoft SQL to store data.",
       pics: {
-        src: "/images/Cart2GoScreenshot.jpg",
+        src: "/images/cart2goScreenshot.jpg",
         width: 250,
         height: 100,
         alt: "Picture of Cart2Go shopping list website.",
