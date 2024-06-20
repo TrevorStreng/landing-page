@@ -6,20 +6,26 @@ import { useEffect } from "react";
 
 export default function Projects() {
   const projects = [
-    // {
-    //   name: "Face Detector",
-    //   link: "https://github.com/TrevorStreng/face_detector",
-    //   description:
-    //     "An AI face detector app built with python and Opencv. Can be used with photos, videos, or webcams.",
-    //   videos: {
-    //     src1: "",
-    //     src2: "",
-    //     width: 250,
-    //     height: 100,
-    //     alt1: "Video with face detection on.",
-    //     alt2: "Original video with no face detection.",
-    //   },
-    // },
+    {
+      name: "Face Detector",
+      link: "https://github.com/TrevorStreng/face_detector",
+      description:
+        "An AI face detector app built with python and Opencv. Can be used with photos, videos, or webcams. Was trained to captured the fronts of faces. It is not perfect but works fairly well.",
+      videos: [
+        {
+          src: "/videos/faceDetection_demo.mp4",
+          width: 250,
+          height: 100,
+          alt1: "Video with face detection on.",
+        },
+        {
+          src: "/videos/faceDetection_orig.mp4",
+          width: 250,
+          height: 100,
+          alt2: "Original video with no face detection.",
+        },
+      ],
+    },
     {
       name: "Cart2Go",
       link: "https://github.com/TrevorStreng/shopping_list",
@@ -141,6 +147,7 @@ export default function Projects() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
+
       <div className="flex flex-col justify-center items-center max-w-screen">
         {projects.map((project, index) => (
           <div
@@ -156,6 +163,7 @@ export default function Projects() {
                 {project.name}
               </h2>
               <p className="my-2">{project.description}</p>
+
               {project.pics && (
                 <div className="flex justify-center mb-5 max-w-[40rem] md:max-w-full">
                   {project.website && <a href={project.website}></a>}
@@ -168,7 +176,16 @@ export default function Projects() {
                   />
                 </div>
               )}
-              {/* {project.videos && <div>hello</div>} */}
+
+              {project.videos &&
+                project.videos.map((video, index) => (
+                  <div key={index}>
+                    <video autoPlay loop muted>
+                      <source src={video.src} type="video/mp4" />
+                    </video>
+                  </div>
+                ))}
+
               <div className="pt-2 w-full flex justify-evenly">
                 {project.link && (
                   <a
@@ -180,6 +197,7 @@ export default function Projects() {
                     View on Github
                   </a>
                 )}
+
                 {project.website && (
                   <a
                     href={project.website}
@@ -190,6 +208,7 @@ export default function Projects() {
                     {project.website_name}
                   </a>
                 )}
+
                 {project.sort && (
                   <div>
                     <Sorting />
