@@ -180,7 +180,7 @@ export default function Projects() {
               {project.videos &&
                 project.videos.map((video, index) => (
                   <div key={index}>
-                    <video autoPlay loop muted>
+                    <video autoPlay loop muted playsInline>
                       <source src={video.src} type="video/mp4" />
                     </video>
                   </div>
