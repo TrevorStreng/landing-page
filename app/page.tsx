@@ -107,6 +107,7 @@ export default function Main() {
       { name: "MongoDB", value: 7.5 },
       { name: "MySQL", value: 8 },
       { name: "MsSQL", value: 7.5 },
+      { name: "PowerBI", value: 5 },
     ],
   };
 
