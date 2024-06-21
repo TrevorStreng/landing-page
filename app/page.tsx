@@ -83,10 +83,12 @@ export default function Main() {
       { name: "SQL", value: 6.5 },
       { name: "Python", value: 5 },
       { name: "Typescript", value: 7 },
+      { name: "C#", value: 6 },
       { name: "x86 Assembly", value: 5 },
     ],
     framesWorks: [
       { name: "NodeJS", value: 7.5 },
+      { name: "ASP.NET", value: 6 },
       { name: "Express", value: 7 },
       { name: "Next.js", value: 6 },
       { name: "React", value: 7 },
@@ -98,12 +100,13 @@ export default function Main() {
       { name: "Mongoose", value: 7 },
     ],
     tools: [
-      { name: "Git", value: 6.5 },
-      { name: "Postman", value: 5 },
-      { name: "Jira", value: 5 },
-      { name: "Wireshark", value: 3 },
-      { name: "MongoDB", value: 6 },
-      { name: "MySQL", value: 7 },
+      { name: "Git", value: 8 },
+      { name: "Postman", value: 7.5 },
+      { name: "Jira", value: 7 },
+      { name: "Wireshark", value: 4 },
+      { name: "MongoDB", value: 7.5 },
+      { name: "MySQL", value: 8 },
+      { name: "MsSQL", value: 7.5 },
     ],
   };
 
