@@ -18,12 +18,12 @@ export default function Projects() {
           height: 100,
           alt1: "Video with face detection on.",
         },
-        {
-          src: "/videos/faceDetection_orig.mp4",
-          width: 250,
-          height: 100,
-          alt2: "Original video with no face detection.",
-        },
+        // {
+        //   src: "/videos/faceDetection_orig.mp4",
+        //   width: 250,
+        //   height: 100,
+        //   alt2: "Original video with no face detection.",
+        // },
       ],
     },
     {
