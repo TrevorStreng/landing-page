@@ -209,11 +209,7 @@ export default function Projects() {
                   </a>
                 )}
 
-                {project.sort && (
-                  <div>
-                    <Sorting />
-                  </div>
-                )}
+                {project.sort && <Sorting />}
               </div>
             </div>
           </div>
