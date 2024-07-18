@@ -30,9 +30,9 @@ export default function Projects() {
       name: "Cart2Go",
       link: "https://github.com/TrevorStreng/shopping_list",
       website_name: "Cart2Go",
-      website: "https://blue-mushroom-0e5dd471e.5.azurestaticapps.net/",
+      website: "https://cart2go-tan.vercel.app/",
       description:
-        "Cart2Go is a shopping list website. It allows users to add things to their cart and sort into customized sections. It is built with Vue.js on the frontend, ASP.NET core on the backend, and Microsoft SQL to store data.",
+        "Cart2Go is a shopping list website. It allows users to add things to their cart and sort into customized sections. It is built with Next.js and stores users shopping lists in local storage.",
       pics: {
         src: "/images/cart2goScreenshot.jpg",
         width: 250,
