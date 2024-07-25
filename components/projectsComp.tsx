@@ -7,6 +7,17 @@ import { useEffect } from "react";
 export default function Projects() {
   const projects = [
     {
+      name: "Data Professional Survey Breakdown",
+      description:
+        "Created an interactive Power BI dashboard to analyze survey data from data professionals, providing insights into job roles, salaries, job satisfaction, and geographic distribution.",
+      pics: {
+        src: "/images/powerBI_Tutorial.jpg",
+        width: 1000,
+        height: 500,
+        alt: "Image of PowerBI dashboard.",
+      },
+    },
+    {
       name: "Face Detector",
       link: "https://github.com/TrevorStreng/face_detector",
       description:
@@ -16,25 +27,19 @@ export default function Projects() {
           src: "/videos/faceDetection_demo.mp4",
           width: 250,
           height: 100,
-          alt1: "Video with face detection on.",
+          alt: "Video with face detection on.",
         },
-        // {
-        //   src: "/videos/faceDetection_orig.mp4",
-        //   width: 250,
-        //   height: 100,
-        //   alt2: "Original video with no face detection.",
-        // },
       ],
     },
     {
       name: "Cart2Go",
-      link: "https://github.com/TrevorStreng/shopping_list",
+      link: "https://github.com/TrevorStreng/cart2go-2",
       website_name: "Cart2Go",
       website: "https://cart2go-tan.vercel.app/",
       description:
         "Cart2Go is a shopping list website. It allows users to add things to their cart and sort into customized sections. It is built with Next.js and stores users shopping lists in local storage.",
       pics: {
-        src: "/images/cart2goScreenshot.jpg",
+        src: "/images/cart2Go.jpg",
         width: 250,
         height: 100,
         alt: "Picture of Cart2Go shopping list website.",
