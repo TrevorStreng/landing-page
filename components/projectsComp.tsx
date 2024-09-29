@@ -139,96 +139,76 @@ export default function Projects() {
   return (
     <>
       <div>
-        {/* <!-- Google tag (gtag.js) --> */}
-        <Script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-SSHP15V2W1"
-        ></Script>
-        <Script id="google-analytics">
-          {`window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+        <h3 className="text-3xl underline py-3 text-center">Projects</h3>
 
-          gtag('config', 'G-SSHP15V2W1');`}
-        </Script>
-      </div>
+        <div className="flex flex-col justify-center items-center max-w-screen">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className={`projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center`}
+              style={{
+                transform: "translateX(-200%)",
+                transition: "transform 1s ease",
+              }}
+            >
+              <div className="max-w-[40rem]">
+                <h2 className="text-2xl p-4 border-y-4 border-lime-600">
+                  {project.name}
+                </h2>
+                <p className="my-2">{project.description}</p>
 
-      <div className="flex flex-col justify-center items-center max-w-screen">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className={`projectCard text-center p-5 my-5 rounded-xl flex flex-col justify-center items-center`}
-            style={{
-              transform: "translateX(-200%)",
-              transition: "transform 1s ease",
-            }}
-          >
-            <div className="max-w-[40rem]">
-              <h2 className="text-2xl p-4 border-y-4 border-lime-600">
-                {project.name}
-              </h2>
-              <p className="my-2">{project.description}</p>
-
-              {project.pics && (
-                <div className="flex justify-center mb-5 max-w-[40rem] md:max-w-full">
-                  {project.website && <a href={project.website}></a>}
-                  <Image
-                    src={project.pics.src}
-                    alt={project.pics.alt}
-                    width={project.pics.width}
-                    height={project.pics.height}
-                    className={project.pics.style}
-                  />
-                </div>
-              )}
-
-              {project.videos &&
-                project.videos.map((video, index) => (
-                  <div key={index}>
-                    <video autoPlay loop muted playsInline>
-                      <source src={video.src} type="video/mp4" />
-                    </video>
+                {project.pics && (
+                  <div className="flex justify-center mb-5 max-w-[40rem] md:max-w-full">
+                    {project.website && <a href={project.website}></a>}
+                    <Image
+                      src={project.pics.src}
+                      alt={project.pics.alt}
+                      width={project.pics.width}
+                      height={project.pics.height}
+                      className={project.pics.style}
+                    />
                   </div>
-                ))}
-
-              <div className="pt-2 w-full flex justify-evenly">
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank" // Open in a new tab
-                    rel="noopener noreferrer" // Recommended for security
-                    className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
-                  >
-                    View on Github
-                  </a>
                 )}
 
-                {project.website && (
-                  <a
-                    href={project.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
-                  >
-                    {project.website_name}
-                  </a>
-                )}
+                {project.videos &&
+                  project.videos.map((video, index) => (
+                    <div key={index}>
+                      <video autoPlay loop muted playsInline>
+                        <source src={video.src} type="video/mp4" />
+                      </video>
+                    </div>
+                  ))}
 
-                {project.sort && <Sorting />}
+                <div className="pt-2 w-full flex justify-evenly">
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank" // Open in a new tab
+                      rel="noopener noreferrer" // Recommended for security
+                      className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                    >
+                      View on Github
+                    </a>
+                  )}
+
+                  {project.website && (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
+                    >
+                      {project.website_name}
+                    </a>
+                  )}
+
+                  {project.sort && <Sorting />}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </>
   );
 }
-
-// : (
-//   <Link
-//     href={project.link}
-//     className="text-xl p-2 border-2 border-lime-600 rounded-full my-8 hover:text-lime-700"
-//   >
-//     Test here
-//   </Link>
-// )
