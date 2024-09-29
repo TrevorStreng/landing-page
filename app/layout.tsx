@@ -1,11 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Header from "@/components/shared/Header";
 import Footer from "@/components/shared/Footer";
-import Image from "next/image";
-import selfPortrait from "public/images/wallSelfie.jpg";
-import selfPortraitMobile from "public/images/mobilePortait.jpg";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,18 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="font-mono">
-      <body
-        className={`${inter.className} `}
-        style={
-          {
-            // backgroundImage: `url(${selfPortrait.src})`,
-            // backgroundSize: "cover",
-            // backgroundPosition: "center",
-            // backgroundAttachment: "fixed",
-          }
-        }
-      >
-        {/* <Header /> */}
+      <body className={`${inter.className} `}>
         <main>{children}</main>
         <Footer />
       </body>

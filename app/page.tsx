@@ -9,21 +9,40 @@ const Projects = dynamic(() => import("@/components/projectsComp"));
 
 export default function Main() {
   const [isLoading, setIsLoading] = useState(true);
+  const [screenWidth, setScreenWidth] = useState(0);
+  const [bgImage, setBgImage] = useState("");
+
+  useEffect(() => {
+    const updateScreenWidth = () => {
+      setScreenWidth(window.innerWidth);
+    };
+    updateScreenWidth();
+    window.addEventListener("resize", updateScreenWidth);
+
+    return () => window.removeEventListener("resize", updateScreenWidth);
+  }, []);
 
   useEffect(() => {
     const desktopImg = new Image();
-    desktopImg.src =
-      "https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752111/landing-page/wallSelfie_ggcnqy.webp";
-    desktopImg.onload = () => {
-      setIsLoading(false);
-    };
     const mobileImg = new Image();
-    mobileImg.src =
-      "https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752121/landing-page/mobilePortrait2_ik1tzi.jpg";
-    mobileImg.onload = () => {
-      setIsLoading(false);
-    };
-  }, []);
+    if (screenWidth !== 0) {
+      if (screenWidth >= 1024) {
+        desktopImg.src =
+          "https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752111/landing-page/wallSelfie_ggcnqy.webp";
+        desktopImg.onload = () => {
+          setBgImage(desktopImg.src);
+          setIsLoading(false);
+        };
+      } else {
+        mobileImg.src =
+          "https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752121/landing-page/mobilePortrait2_ik1tzi.jpg";
+        mobileImg.onload = () => {
+          setBgImage(mobileImg.src);
+          setIsLoading(false);
+        };
+      }
+    }
+  }, [screenWidth]);
 
   return (
     <>
@@ -44,7 +63,15 @@ export default function Main() {
       {isLoading ? (
         <Loading />
       ) : (
-        <div className="relative">
+        <div
+          className="relative"
+          style={{
+            height: "100vh",
+            backgroundImage: `url(${bgImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        >
           <Pictures />
           <Middle />
           <Projects />

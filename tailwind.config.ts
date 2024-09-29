@@ -12,8 +12,6 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        mobilePortrait: "url(/public/images/mobilePortrait.jpg)",
-        wallSelfie: "url(/public/images/wallSelfie.jpg)",
       },
     },
   },
