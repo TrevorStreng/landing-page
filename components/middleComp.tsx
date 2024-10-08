@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons";
+import axios from "axios";
 
 export default function Middle() {
   const [selectedSkill, setSelectedSkill] = useState("languages");
@@ -44,6 +45,30 @@ export default function Middle() {
       }
     }
   });
+
+  const leetcode = async () => {
+    const query = {
+      query: `query {matchedUser(username: "Hippys") {
+        username
+        submitStats: submitStatsGlobal {
+            acSubmissionNum {
+                difficulty
+                count
+            }
+        }
+    }}`,
+    };
+    const res = await axios({
+      url: "https://leetcode.com/graphql",
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      data: query,
+    });
+    console.log("leetcode data: " + res.data);
+  };
+  leetcode();
 
   const skills = {
     languages: [
@@ -317,6 +342,10 @@ export default function Middle() {
               </div>
             </div>
           </div>
+        </div>
+
+        <div id="leetcode" className={`flex flex-col w-full mb-8 items-center`}>
+          <h3 className="text-3xl underline py-3 text-center">LeetCode</h3>
         </div>
 
         <div
