@@ -46,29 +46,30 @@ export default function Middle() {
     }
   });
 
-  const leetcode = async () => {
-    const query = {
-      query: `query {matchedUser(username: "Hippys") {
-        username
-        submitStats: submitStatsGlobal {
-            acSubmissionNum {
-                difficulty
-                count
-            }
-        }
-    }}`,
-    };
-    const res = await axios({
-      url: "https://leetcode.com/graphql",
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      data: query,
-    });
-    console.log("leetcode data: " + res.data);
-  };
-  leetcode();
+  // ! need to call fom backend to get around cors policy
+  // const leetcode = async () => {
+  //   const query = {
+  //     query: `query {matchedUser(username: "Hippys") {
+  //       username
+  //       submitStats: submitStatsGlobal {
+  //           acSubmissionNum {
+  //               difficulty
+  //               count
+  //           }
+  //       }
+  //   }}`,
+  //   };
+  //   const res = await axios({
+  //     url: "https://leetcode.com/graphql",
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     data: query,
+  //   });
+  //   console.log("leetcode data: " + res.data);
+  // };
+  // leetcode();
 
   const skills = {
     languages: [
