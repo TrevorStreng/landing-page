@@ -126,9 +126,20 @@ export default function Middle() {
       name: "Cameron Park Physical Therapy",
       position: "Physical Therapy Aide Supervisor",
       duties: [
-        "Trained patients in speicalized exercises to aid in their recovery",
-        "Collaborated with Physical Therapists to ensure effective patient treatment",
-        "Managed patient accounts and insurance",
+        "Directed specialized training sessions to accelerate recovery for 20-40 patients daily.",
+        "Collaborated with 5 Physical Therapists to ensure effective patient treatment.",
+        "Prepared and maintained hundreds of patient accounts, implementing best practices to ensure data integrity.",
+        "Supervised a team of up to 5 aides simultaneously, overseeing and ensuring high-quality treatment.",
+        "Managed social media and website content while actively contributing to advertising and marketing efforts.",
+      ],
+    },
+    {
+      name: "Streng Construction Inc.",
+      position: "Construction Associate",
+      duties: [
+        "Worked on various construction tasks including fence repair, painting, deck restoration, and landscaping.",
+        "Coordinated with up to 4 team members to complete projects efficiently.",
+        "Communicated effectively with supervisor and coworkers to complete tasks to specifications.",
       ],
     },
   ];
@@ -345,25 +356,28 @@ export default function Middle() {
           </div>
         </div>
 
-        <div id="leetcode" className={`flex flex-col w-full mb-8 items-center`}>
+        {/* <div id="leetcode" className={`flex flex-col w-full mb-8 items-center`}>
           <h3 className="text-3xl underline py-3 text-center">LeetCode</h3>
-        </div>
+        </div> */}
 
         <div
           id="workHistory"
-          className={`bg-white pb-1 ${bgColorFromLeft} w-full text-center`}
+          className={`bg-white pb-2 ${bgColorFromLeft} w-full text-center`}
         >
           <h3 className="text-3xl underline py-3 text-center">Work History</h3>
           <ul>
             {work.map((job, index) => (
-              <div key={index}>
+              <div key={index} className="pb-2 flex flex-col items-center">
                 <p className="font-bold text-xl text-center">{job.name}</p>
                 <p className="text-lg font-medium text-center">
                   {job.position}
                 </p>
-                <ul className="list-disc">
+                <ul className="list-disc max-w-[40rem] text-start">
                   {job.duties.map((duty, index) => (
-                    <li key={index}>{duty}</li>
+                    <li key={index} className="flex flex-start">
+                      <p className="pr-1">•</p>
+                      <p>{duty}</p>
+                    </li>
                   ))}
                 </ul>
               </div>

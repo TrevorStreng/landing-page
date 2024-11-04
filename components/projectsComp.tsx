@@ -7,6 +7,21 @@ import { useEffect } from "react";
 export default function Projects() {
   const projects = [
     {
+      name: "Fortbot",
+      link: "https://github.com/TrevorStreng/fort_bot",
+      website_name: "Add to server",
+      website:
+        "https://discord.com/oauth2/authorize?client_id=1295913004969234503",
+      description:
+        "A Discord bot that provides information about the game Fortnite. Data provided includes getting player stats and selecting random named places of interest.",
+      pics: {
+        src: "/images/fortbot.jpg",
+        width: 1000,
+        height: 500,
+        alt: "Image of Discord example.",
+      },
+    },
+    {
       name: "Data Professional Survey Breakdown",
       description:
         "Created an interactive Power BI dashboard to analyze survey data from data professionals, providing insights into job roles, salaries, job satisfaction, and geographic distribution.",

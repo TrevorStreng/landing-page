@@ -9,6 +9,8 @@ export default function Pictures() {
     }
   };
 
+  // TODO: dont lopad picture first to get screen size then load picture
+
   return (
     <>
       <div
