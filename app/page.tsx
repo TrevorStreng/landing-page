@@ -11,6 +11,7 @@ export default function Main() {
   const [isLoading, setIsLoading] = useState(true);
   const [screenWidth, setScreenWidth] = useState(0);
   const [bgImage, setBgImage] = useState("");
+  const [bgColor, setBgColor] = useState("white"); // Step 1: Set initial white background
 
   useEffect(() => {
     const updateScreenWidth = () => {
@@ -31,6 +32,7 @@ export default function Main() {
           "https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752111/landing-page/wallSelfie_ggcnqy.webp";
         desktopImg.onload = () => {
           setBgImage(desktopImg.src);
+          setBgColor("transparent"); // Step 2: Once the image loads, make background transparent
           setIsLoading(false);
         };
       } else {
@@ -38,11 +40,13 @@ export default function Main() {
           "https://res.cloudinary.com/dbmalfwhu/image/upload/v1709752121/landing-page/mobilePortrait2_ik1tzi.jpg";
         mobileImg.onload = () => {
           setBgImage(mobileImg.src);
+          setBgColor("transparent"); // Step 2: Once the image loads, make background transparent
           setIsLoading(false);
         };
       }
     }
-  }, [screenWidth]);
+    console.log(bgImage);
+  }, [screenWidth, bgImage]);
 
   return (
     <>
@@ -60,23 +64,24 @@ export default function Main() {
           gtag('config', 'G-SSHP15V2W1');`}
         </Script>
       </div>
-      {isLoading ? (
+      {/* {isLoading ? (
         <Loading />
-      ) : (
-        <div
-          className="relative"
-          style={{
-            height: "100vh",
-            backgroundImage: `url(${bgImage})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
-          <Pictures />
-          <Middle />
-          <Projects />
-        </div>
-      )}
+      ) : ( */}
+      <div
+        className="relative"
+        style={{
+          height: "100vh",
+          backgroundColor: bgColor, // Step 3: Use bgColor state for initial white background
+          backgroundImage: `url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <Pictures />
+        <Middle />
+        <Projects />
+      </div>
+      {/* )} */}
     </>
   );
 }

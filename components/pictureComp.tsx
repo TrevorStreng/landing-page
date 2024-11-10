@@ -15,7 +15,7 @@ export default function Pictures() {
     <>
       <div
         id="overPic"
-        className="flex flex-col h-screen items-center sm:relative bg-mobilePortrait bg-wallSelfie inset-x-0 top-0 overflow-hidden"
+        className="flex flex-col h-screen items-center sm:relative inset-x-0 top-0 overflow-hidden"
       >
         <div className="flex flex-col items-end text-right justify-end sm:justify-center sm:w-2/3 w-full sm:h-5/6 h-2/3 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
           <div className="flex w-full justify-start sm:justify-end text-center sm:p-0 pb-6 pl-4">
