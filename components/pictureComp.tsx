@@ -1,5 +1,6 @@
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 export default function Pictures() {
   const handleScroll = () => {
@@ -17,6 +18,17 @@ export default function Pictures() {
         id="overPic"
         className="flex flex-col h-screen items-center sm:relative inset-x-0 top-0 overflow-hidden"
       >
+        <picture className="">
+          <source
+            media="(min-width: 62em)"
+            srcSet="https://res.cloudinary.com/dbmalfwhu/image/upload/v1738725371/landing-page/wall_selfie_reduced.jpg"
+          ></source>
+          <source
+            media="(max-width: 62em)"
+            srcSet="https://res.cloudinary.com/dbmalfwhu/image/upload/v1738725345/landing-page/mobile_selfie_reduced.jpg"
+          ></source>
+          <Image src="" alt="alt text here" fill />
+        </picture>
         <div className="flex flex-col items-end text-right justify-end sm:justify-center sm:w-2/3 w-full sm:h-5/6 h-2/3 text-4xl font-mono text-slate-200 md:text-black sm:pr-0 pr-4">
           <div className="flex w-full justify-start sm:justify-end text-center sm:p-0 pb-6 pl-4">
             <div className="">
