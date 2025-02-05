@@ -25,7 +25,7 @@ export default function Pictures() {
           ></source>
           <source
             media="(max-width: 62em)"
-            srcSet="https://res.cloudinary.com/dbmalfwhu/image/upload/v1738725345/landing-page/mobile_selfie_reduced.jpg"
+            srcSet="https://res.cloudinary.com/dbmalfwhu/image/upload/v1738725823/landing-page/mobile_selfie_reduced.jpg"
           ></source>
           <Image src="" alt="alt text here" fill />
         </picture>
