@@ -46,40 +46,16 @@ export default function Middle() {
     }
   });
 
-  // ! need to call fom backend to get around cors policy
-  // const leetcode = async () => {
-  //   const query = {
-  //     query: `query {matchedUser(username: "Hippys") {
-  //       username
-  //       submitStats: submitStatsGlobal {
-  //           acSubmissionNum {
-  //               difficulty
-  //               count
-  //           }
-  //       }
-  //   }}`,
-  //   };
-  //   const res = await axios({
-  //     url: "https://leetcode.com/graphql",
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //     },
-  //     data: query,
-  //   });
-  //   console.log("leetcode data: " + res.data);
-  // };
-  // leetcode();
-
   const skills = {
     languages: [
-      { name: "Javascript", value: 7.5 },
+      { name: "Javascript", value: 8 },
       { name: "Java", value: 6 },
       { name: "HTML", value: 7.5 },
       { name: "CSS", value: 7 },
-      { name: "SQL", value: 6.5 },
+      { name: "SQL", value: 7 },
       { name: "Python", value: 5 },
       { name: "Typescript", value: 7 },
+      { name: "C++", value: 7 },
       { name: "C#", value: 6 },
       { name: "x86 Assembly", value: 5 },
     ],
@@ -122,6 +98,14 @@ export default function Middle() {
     },
   ];
   const work = [
+    {
+      name: "AIG Logistics",
+      position: "Delivery Associate",
+      duties: [
+        "Drove fleet vehicle and completed pre- and post-inspection checks.",
+        "Provided fast and careful delivery to over a hundred customers a day.",
+      ],
+    },
     {
       name: "Cameron Park Physical Therapy",
       position: "Physical Therapy Aide Supervisor",

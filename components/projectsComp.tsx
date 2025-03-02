@@ -36,7 +36,7 @@ export default function Projects() {
       name: "Face Detector",
       link: "https://github.com/TrevorStreng/face_detector",
       description:
-        "An AI face detector app built with python and Opencv. Can be used with photos, videos, or webcams. Was trained to captured the fronts of faces. It is not perfect but works fairly well.",
+        "An AI face detector app built with python and Opencv. Can be used with photos, videos, or webcams. Was trained to captured the fronts of faces.",
       videos: [
         {
           src: "/videos/faceDetection_demo.mp4",
