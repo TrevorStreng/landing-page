@@ -87,6 +87,11 @@ export default function Middle() {
   const hobbies = ["Riding bikes", "Snowboarding", "Programming"];
   const education = [
     {
+      school: "California State University, Chico",
+      degree: "Masters of Science, Computer Science",
+      date: "January 2025 - Current",
+    },
+    {
       school: "California State University, Sacramento",
       degree: "Bachelors of Science, Computer Science",
       date: "August 2020 - December 2023",
