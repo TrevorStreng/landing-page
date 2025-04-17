@@ -7,6 +7,19 @@ import { useEffect } from "react";
 export default function Projects() {
   const projects = [
     {
+      name: "Ecommerce",
+      link: "https://github.com/TrevorStreng/ecommerce",
+      website_name: "Add to server",
+      description:
+        "An ecommerce website with a modern design, crafted to help with the sale of clothing. Still working to finish this project. Currently running on Node.js and React.",
+      pics: {
+        src: "/images/ecommerce_mens.jpg",
+        width: 1000,
+        height: 500,
+        alt: "Image of Discord example.",
+      },
+    },
+    {
       name: "Fortbot",
       link: "https://github.com/TrevorStreng/fort_bot",
       website_name: "Add to server",
@@ -64,8 +77,8 @@ export default function Projects() {
     {
       name: "Feed",
       link: "https://github.com/TrevorStreng/Feed",
-      website_name: "feed-friends.vercel.app",
-      website: "https://feed-friends.vercel.app/",
+      // website_name: "feed-friends.vercel.app",
+      // website: "https://feed-friends.vercel.app/",
       description:
         "Feed is a messaging board website that allows users to create an account, and post messages to the main page. It was created with Next.js on the frontend and Node.js and Express on the backend. Feed takes advantage of both a Rest api for creating user accounts, logging in, reseting passwords and storing posts, as well as web sockets to update posts in real time.",
       pics: {

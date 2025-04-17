@@ -48,7 +48,7 @@ export default function Middle() {
 
   const skills = {
     languages: [
-      { name: "Javascript", value: 8 },
+      { name: "Javascript", value: 8.5 },
       { name: "Java", value: 6 },
       { name: "HTML", value: 7.5 },
       { name: "CSS", value: 7 },
@@ -61,14 +61,14 @@ export default function Middle() {
     ],
     framesWorks: [
       { name: "NodeJS", value: 7.5 },
-      { name: "ASP.NET", value: 6 },
-      { name: "Express", value: 7 },
+      { name: "ASP.NET", value: 5 },
+      { name: "Express", value: 7.5 },
       { name: "Next.js", value: 6 },
       { name: "React", value: 7 },
       { name: "React Native", value: 5 },
       { name: "Tailwind CSS", value: 8 },
       { name: "Codename One", value: 5 },
-      { name: "Prisma ORM", value: 4 },
+      { name: "Prisma ORM", value: 5 },
       { name: "Sequelize", value: 6 },
       { name: "Mongoose", value: 7 },
     ],
@@ -89,17 +89,15 @@ export default function Middle() {
     {
       school: "California State University, Chico",
       degree: "Masters of Science, Computer Science",
-      date: "January 2025 - Current",
+      date: "In Progress",
     },
     {
       school: "California State University, Sacramento",
       degree: "Bachelors of Science, Computer Science",
-      date: "August 2020 - December 2023",
     },
     {
       school: "Folsom Lake College",
       degree: "Associates in Arts, Interdisciplinary Studies: Math and Science",
-      date: "August 2016 - May 2020",
     },
   ];
   const work = [
@@ -191,7 +189,7 @@ export default function Middle() {
             </div>
             <div className=" border rounded-md w-32 h-[1.9em] flex items-center justify-center my-2 md:my-0 shadow-md hover:shadow-lg">
               <a
-                href="/TrevorStrengResume2024_CURRENT.pdf"
+                href="/TrevorStrengResume_CURRENT.pdf"
                 download="TrevorStreng's-Resume"
                 className=""
               >
