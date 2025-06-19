@@ -209,7 +209,9 @@ export default function Middle() {
             <div key={index} className="text-center">
               <p className="font-medium text-xl border-b-2">{school.school}</p>
               <p>{school.degree}</p>
-              <p>{school.date}</p>
+              <p>
+                <i>{school.date}</i>
+              </p>
               <br />
             </div>
           ))}
